@@ -39,17 +39,17 @@ Fairness / deployment risk: A hotspot model that under-represents low-income or 
 
 ## Success criteria by milestone
 
-- **M1, proposal (W4):** <measurable criterion>
-- **M2, data summary (W7):** <measurable criterion>
+- **M1, proposal (W4):** Completion, SMART Goals
+- **M2, data summary (W7):** Data sources confirmed, data pipeline built
 - **M3, poster rough draft (W10):** <measurable criterion>
 - **M4, write-up rough draft (W12):** <measurable criterion>
 - **M5, final write-up and poster (W14):** <measurable criterion>
 
 ## Working agreements (internal to owner team)
 
-- **Sync rhythm:** <e.g., one async standup per weekday in `#<project>-standup`>
-- **Code review:** <who reviews what, by when>
-- **Decision rule:** <how the team decides when it disagrees>
+- **Sync rhythm:** One async standup per weekday in `#<project>-standup`
+- **Code review:** Both review every Sunday by 11:59pm
+- **Decision rule:** Product Owner Lead has the final say
 
 ## Working agreements (triad with peer POs)
 
