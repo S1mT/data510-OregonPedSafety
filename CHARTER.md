@@ -34,7 +34,8 @@ The team will build a spatial risk model of pedestrian incidents in the Salem ar
   Access: All proposed sources are public or publicly requestable; no data-sharing agreement required
   Skills: Team has prior traffic accident project experience; pedestrian/cyclist-specific modeling and spatial analysis (GeoPandas, QGIS) may require some ramp-up
 
-- **Ethics risks:** consent, retention, PII, fairness, deployment risk.
+- **Ethics risks:** Underreporting bias: Police-reported crash data systematically undercounts minor pedestrian and cyclist incidents, skewing models toward severe events; findings must be explicitly scoped to reported crashes and not generalized as total risk
+Fairness / deployment risk: A hotspot model that under-represents low-income or minority corridors (due to underreporting or lower baseline traffic counts) could inadvertently direct resources away from the most vulnerable communities
 
 ## Success criteria by milestone
 
