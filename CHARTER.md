@@ -108,5 +108,5 @@ A PBI is done, and may be moved from `Analyze` into `Done`, when:
 
 ### How to reach us
 - Discord category: `#<project>-general` (day-to-day), `#<project>-studio` (Briefs and Critiques), `#<project>-blockers` (impediments)
-- GitHub repo: <link>
-- GitHub Projects board: <link>
+- GitHub repo: https://github.com/S1mT/data510-SalemPedSafety
+- GitHub Projects board: https://github.com/S1mT/data510-SalemPedSafety/projects?query=is%3Aopen
