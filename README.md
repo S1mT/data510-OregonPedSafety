@@ -6,12 +6,12 @@
 
 | Field | Value |
 |-------|-------|
-| Owner team | <names> |
-| Owner Product Lead | <name> |
-| Peer Stakeholder POs | <names of your 2 or 3 peer PO individuals> |
+| Owner team | Simon Thompson, Rohan Srinivasa Babu |
+| Owner Product Lead | Simon Thompson |
+| Peer Stakeholder POs | Amaya Supancich-McCord, Aiyana Brown, Seira Ramchandani |
 | Studio Session | <1, 2, or 3> |
-| GitHub repo | <link to this repo> |
-| GitHub Projects board | <link> |
+| GitHub repo | https://github.com/S1mT/data510-SalemPedSafety |
+| GitHub Projects board | https://github.com/S1mT/data510-SalemPedSafety/projects?query=is%3Aopen |
 | Discord category | `#<project>-*` |
 | Instructor / Sponsor | Lucas Cordova (`LucasCordova` on GitHub) |
 
