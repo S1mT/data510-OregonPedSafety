@@ -2,29 +2,38 @@
 
 > Filled in live during the **Studio Charter** session in week 3. Every section below is committed in the same commit at the end of that class block. See [Studio Charter (single-session inception)](https://courses.lpcordova.phd/data510/project-framework/charter-inception.html) for the script and time-boxes.
 
-**Owner team:** <names>
-**Owner Product Lead:** <name>
-**Peer Stakeholder POs:** <names of your 2 or 3 peer PO individuals>
+**Owner team:** Simon Thompson & Rohan Srinivasa Babu
+**Owner Product Lead:** Simon Thompson
+**Peer Stakeholder POs:** Amaya Supancich-McCord, Aiyana Brown, Seira Ramchandani
 **Instructor / Sponsor:** Lucas Cordova (`LucasCordova` on GitHub)
 **GitHub repo:** <link to this repo>
 **GitHub Projects board:** <link>
 **Discord category:** `#<project>-*`
-**Studio Session:** <1, 2, or 3>
-**Studio formed:** <date>
+**Studio Session:** 2
+**Studio formed:** 5/25/26
 
 ## Vision
 
-One or two sentences. The world (or organization, or domain) if this project succeeds.
+Salem becomes a city where planners and engineers can pinpoint the roads and intersections that put pedestrians at greatest risk — and direct safety investments there before the next crash, not after.
 
 ## Mission
 
-One or two sentences. What the owner team will actually do this semester.
+The team will build a spatial risk model of pedestrian incidents in the Salem area using ODOT crash records and public infrastructure data and identify the factors most associated with high-severity outcomes.
 
 ## Context
 
-- **Users / affected parties:** who benefits, who is at risk, who might use the result.
-- **Data sources (proposed):** named sources, access status, license / ethics notes.
-- **Constraints:** time, compute, access, skills, scope.
+- **Users / affected parties:**
+  Pedestrians – most exposed to severe crashes and least buffered by car infrastructure
+  Oregon DOT's Transportation Safety Division – funds and publishes the crash data; may act on statewide pattern findings
+  Salem city planners / council – primary users of risk-area findings; can act on infrastructure recommendations
+
+- **Data sources (proposed):** ODOT, City of Salem, Salem Keizer Area Transportation Study (SKATS)
+
+- **Constraints:**
+  Compute: Standard laptop-tier compute; dataset size (county-level crash records) is well within local capacity
+  Access: All proposed sources are public or publicly requestable; no data-sharing agreement required
+  Skills: Team has prior traffic accident project experience; pedestrian/cyclist-specific modeling and spatial analysis (GeoPandas, QGIS) may require some ramp-up
+
 - **Ethics risks:** consent, retention, PII, fairness, deployment risk.
 
 ## Success criteria by milestone
