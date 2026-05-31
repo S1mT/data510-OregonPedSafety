@@ -1,8 +1,8 @@
-# Studio Brief -- Week <04>
+# Studio Brief -- Week 04
 
 **From:** Amaya
 **To:** Rohan & Simon
-**Filed:** 05/31/2026 | 10:33 AM
+**Filed:** 05/31/2026 | 11:00 AM
 **For iteration starting:** 06/01/2026
 **Milestone tag in focus:** M1-proposal
 
