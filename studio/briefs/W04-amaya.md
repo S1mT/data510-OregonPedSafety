@@ -3,7 +3,7 @@
 **From:** Amaya
 **To:** Rohan & Simon
 **Filed:** 05/31/2026 | 11:00 AM
-**For iteration starting:** 06/01/2026
+**For iteration starting:** 05/25/2026
 **Milestone tag in focus:** M1-proposal
 
 ## What I want you to consider for the next iteration
