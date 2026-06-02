@@ -99,12 +99,12 @@ A PBI is done, and may be moved from `Analyze` into `Done`, when:
 We exist to help Salem prevent severe pedestrian injuries and fatalities by identifying where and why the greatest risks occur before crashes happen. By turning crash and infrastructure data into actionable insights, we enable smarter, more proactive safety investments that protect the community.
 
 ### What we will deliver to peer POs every week
-- An Iteration Review in this `README.md` by <day / time>
+- An Iteration Review in this `README.md` by Tuesday 11:59pm
 - A summary of which Studio Brief items we adopted, deferred, or declined and why
 
 ### What we need from peer POs every week
-- A Studio Brief by <day / time> next class (next iteration's requirements, questions, risks)
-- A Studio Critique by <day / time> next class (assessment of last week's delivery)
+- A Studio Brief by Sunday 5pm next class (next iteration's requirements, questions, risks)
+- A Studio Critique by Wednesday 11:59pm next class (assessment of last week's delivery)
 
 ### How to reach us
 - Discord category: `#<project>-general` (day-to-day), `#<project>-studio` (Briefs and Critiques), `#<project>-blockers` (impediments)
