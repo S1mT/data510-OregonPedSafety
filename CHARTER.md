@@ -39,11 +39,11 @@ Fairness / deployment risk: A hotspot model that under-represents low-income or 
 
 ## Success criteria by milestone
 
-- **M1, proposal (W4):** Completion, SMART Goals
-- **M2, data summary (W7):** Data sources confirmed, data pipeline built
-- **M3, poster rough draft (W10):** <measurable criterion>
-- **M4, write-up rough draft (W12):** <measurable criterion>
-- **M5, final write-up and poster (W14):** <measurable criterion>
+- **M1, proposal (W4):** Completion of proposal with approved problem statement, stakeholder analysis and data acquisition plan.
+- **M2, data summary (W7):** Data sources confirmed and documented; reproducible data pipeline built; exploratory analysis completed.
+- **M3, poster rough draft (W10):** Poster contains all major sections (problem, data, methods, preliminary results, limitations, recommendations) and includes at least 3 completed visualizations/maps with initial findings from the risk analysis.
+- **M4, write-up rough draft (W12):** Complete draft with all major sections written (Introduction, Data, Methods, Results, Discussion, Ethics, Conclusion); at least 80% of planned analyses completed and documented; peer-review feedback collected.
+- **M5, final write-up and poster (W14):** Final report and presentation-ready poster submitted; spatial risk model evaluated and interpreted; top pedestrian risk factors identified; 2-3 actionable recommendations for Salem planners supported by project findings.
 
 ## Working agreements (internal to owner team)
 
