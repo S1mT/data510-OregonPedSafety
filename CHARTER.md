@@ -6,7 +6,7 @@
 **Owner Product Lead:** Simon Thompson
 **Peer Stakeholder POs:** Amaya Supancich-McCord, Aiyana Brown, Seira Ramchandani
 **Instructor / Sponsor:** Lucas Cordova (`LucasCordova` on GitHub)
-**GitHub repo:** https://github.com/S1mT/data510-SalemPedSafety
+**GitHub repo:** https://github.com/S1mT/data510-OregonPedSafety
 **GitHub Projects board:** <https://github.com/S1mT/data510-OregonPedSafety/projects?query=is%3Aopen>
 **Discord category:** `#<project>-*`
 **Studio Session:** 2
