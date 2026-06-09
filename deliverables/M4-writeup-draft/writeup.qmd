@@ -2,9 +2,8 @@
 title: "Capstone Project Write-Up"
 subtitle: "Replace with your project title"
 author:
-  - "Your Name"
-  - "Teammate Two"
-  - "Teammate Three"
+  - "Simon Thompson"
+  - "Rohan Srinivasa Babu"
 date: today
 bibliography: refs.bib
 format:
@@ -34,17 +33,20 @@ execute:
 
 # Title, Team, and Affiliations
 
-**Project title:** *(same as charter)*
+**Project title:** *Fatal Pedestrian and Cyclist Crash Risk Factors in Oregon: A Spatial and Predictive Analysis *
 
 | Name | Role | Willamette email |
-|------|------|------------------|
-| | Owner Product Lead | |
-| | | |
-| | | |
+| Simon Thompson | Owner Product Lead | sthompson2@willamette.edu |
+| Rohan Srinivasa Babu | Owner Team | rsrinivasababu@willamette.edu |
+
 
 **Peer Stakeholder POs:** *(from lookup)*
+| Name | Role | Willamette email |
+|Aiyana Brown | Peer Stakeholder | acbrown2@willamette.edu |
+|Amaya Supancich-McCord | Peer Stakeholder | asupancichmccord@willamette.edu |
+|Seira Ramchandani | Peer Stakeholder | sramchandani@willamette.edu |
 
-**Repository:** `https://github.com/your-org/your-repo`
+**Repository:** `https://github.com/S1mT/data510-OregonPedSafety`
 
 # Abstract
 
@@ -56,15 +58,32 @@ execute:
 
 **Problem statement:**
 
+Pedestrians and cyclists remain among the most vulnerable users of the transportation network. While motor vehicle safety has improved substantially over recent decades, pedestrian and cyclist fatalities continue to represent a significant public health and transportation safety concern. Understanding where these fatalities occur and the environmental, roadway, and demographic factors associated with them can help transportation planners prioritize interventions and allocate limited safety resources more effectively.
+
+This proposal is consistent with the project Vision and Mission established in the project charter. We seek to identify factors associated with fatal pedestrian and cyclist crashes and provide evidence-based recommendations for transportation safety improvements.
+
 **Primary research question:**
 
+Which environmental, roadway, and temporal factors are most strongly associated with fatal pedestrian and cyclist crashes in Oregon between 2015 and 2024?
+
 **Secondary questions (if any):**
+
+Are fatal pedestrian and cyclist crashes disproportionately concentrated in areas with certain identifiable demographics (race, ethnicity, income, etc.) in Oregon between 2015 and 2024?
 
 **Changes since M1 proposal:** *(none yet, or explain pivot)*
 
 # Impact and Stakeholders
 
 <!-- Paste from M1 proposal Section 3. -->
+
+Pedestrians and Cyclists: Pedestrians and cyclists experience the highest levels of physical vulnerability during roadway collisions. Findings may help identify locations requiring targeted safety improvements.
+
+Oregon Department of Transportation (ODOT): ODOT maintains statewide transportation safety initiatives and may use project findings to better understand risk factors associated with fatal pedestrian and cyclist crashes.
+
+City/County Transportation Planners: Local planners may benefit from spatial analyses identifying high-risk features such as traffic device (STOP sign, YIELD sign, signal), roadway surface, sidewalk presence, etc. for both retroactive and proactive infrastructure investment.
+
+Public Health and Community Organizations: Organizations focused on injury prevention, transportation equity, and community mobility may use findings to support advocacy and planning efforts.
+
 
 # Related Work and Background
 
