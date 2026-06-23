@@ -1,8 +1,8 @@
 ## Raw Data Provenance
 The analysis relies on raw data originating from the National Highway Traffic Safety Administration's (NHTSA) Fatality Analysis Reporting System (FARS) from 2015 to 2024. 
 
-Raw Data Download Source: https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/FARS/
-FARS Analytical User’s Manual: https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813794 
+- Raw Data Download Source: https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/FARS/
+- FARS Analytical User’s Manual: https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813794 
 
 Due to the relational structure of the FARS database and the massive size of the national files, the raw data is not committed to this repository. The raw extraction process relies on the following annual national tables stored locally in `data/raw/`:
 * `accident.csv` (Crash-level environmental and temporal factors)
