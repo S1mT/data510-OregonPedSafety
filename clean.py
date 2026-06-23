@@ -8,7 +8,7 @@ def extract_all_oregon_files(start_year=2021, end_year=2022):
         'weather', 'crashrf', 'vehicle'
     ]
 
-    # Saving directly into your 'raw' folder to match the Mac setup
+    # Saving directly into your 'raw' folder
     out_dir = 'Oregon_Cleaned_FARS'
     os.makedirs(out_dir, exist_ok=True)
 
