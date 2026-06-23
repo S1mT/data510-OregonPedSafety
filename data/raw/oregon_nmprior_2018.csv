@@ -1,0 +1,91 @@
+STATE,STATENAME,ST_CASE,VEH_NO,PER_NO,MPR_ACT,MPR_ACTNAME
+41,Oregon,410002,0,1,3,Crossing Roadway
+41,Oregon,410006,0,1,5,Movement Along Roadway with Traffic (In or Adjacent to Travel Lane)
+41,Oregon,410007,0,1,98,Not Reported
+41,Oregon,410009,0,1,8,"In Roadway - Other (Working, Playing, Etc.)"
+41,Oregon,410012,0,1,3,Crossing Roadway
+41,Oregon,410015,0,1,8,"In Roadway - Other (Working, Playing, Etc.)"
+41,Oregon,410021,0,1,3,Crossing Roadway
+41,Oregon,410022,0,1,3,Crossing Roadway
+41,Oregon,410030,0,1,3,Crossing Roadway
+41,Oregon,410034,0,1,3,Crossing Roadway
+41,Oregon,410035,0,1,3,Crossing Roadway
+41,Oregon,410043,0,1,98,Not Reported
+41,Oregon,410048,0,1,3,Crossing Roadway
+41,Oregon,410058,0,1,3,Crossing Roadway
+41,Oregon,410059,0,1,99,Reported as Unknown
+41,Oregon,410065,0,1,3,Crossing Roadway
+41,Oregon,410066,0,1,9,"Stationary and Adjacent to Roadway (e.g., Shoulder, Median, Sidewalk)"
+41,Oregon,410084,0,1,12,"Disabled Vehicle Related (Working on, Pushing, Leaving/Approaching)"
+41,Oregon,410098,0,1,3,Crossing Roadway
+41,Oregon,410101,0,1,3,Crossing Roadway
+41,Oregon,410115,0,1,8,"In Roadway - Other (Working, Playing, Etc.)"
+41,Oregon,410144,0,1,3,Crossing Roadway
+41,Oregon,410158,0,1,3,Crossing Roadway
+41,Oregon,410159,0,1,3,Crossing Roadway
+41,Oregon,410167,0,1,98,Not Reported
+41,Oregon,410172,0,1,3,Crossing Roadway
+41,Oregon,410197,0,1,5,Movement Along Roadway with Traffic (In or Adjacent to Travel Lane)
+41,Oregon,410206,0,1,3,Crossing Roadway
+41,Oregon,410218,0,1,3,Crossing Roadway
+41,Oregon,410219,0,1,3,Crossing Roadway
+41,Oregon,410231,0,1,9,"Stationary and Adjacent to Roadway (e.g., Shoulder, Median, Sidewalk)"
+41,Oregon,410231,0,1,12,"Disabled Vehicle Related (Working on, Pushing, Leaving/Approaching)"
+41,Oregon,410237,0,1,98,Not Reported
+41,Oregon,410239,0,1,5,Movement Along Roadway with Traffic (In or Adjacent to Travel Lane)
+41,Oregon,410247,0,1,98,Not Reported
+41,Oregon,410256,0,1,98,Not Reported
+41,Oregon,410260,0,1,3,Crossing Roadway
+41,Oregon,410263,0,1,3,Crossing Roadway
+41,Oregon,410274,0,1,3,Crossing Roadway
+41,Oregon,410275,0,1,3,Crossing Roadway
+41,Oregon,410279,0,1,3,Crossing Roadway
+41,Oregon,410280,0,1,3,Crossing Roadway
+41,Oregon,410281,0,1,9,"Stationary and Adjacent to Roadway (e.g., Shoulder, Median, Sidewalk)"
+41,Oregon,410282,0,1,3,Crossing Roadway
+41,Oregon,410283,0,1,3,Crossing Roadway
+41,Oregon,410284,0,1,3,Crossing Roadway
+41,Oregon,410286,0,1,3,Crossing Roadway
+41,Oregon,410303,0,1,3,Crossing Roadway
+41,Oregon,410307,0,1,3,Crossing Roadway
+41,Oregon,410313,0,1,8,"In Roadway - Other (Working, Playing, Etc.)"
+41,Oregon,410316,0,1,3,Crossing Roadway
+41,Oregon,410318,0,1,3,Crossing Roadway
+41,Oregon,410320,0,1,3,Crossing Roadway
+41,Oregon,410325,0,1,8,"In Roadway - Other (Working, Playing, Etc.)"
+41,Oregon,410330,0,1,98,Not Reported
+41,Oregon,410331,0,1,99,Reported as Unknown
+41,Oregon,410333,0,1,3,Crossing Roadway
+41,Oregon,410334,0,1,3,Crossing Roadway
+41,Oregon,410336,0,1,3,Crossing Roadway
+41,Oregon,410340,0,1,3,Crossing Roadway
+41,Oregon,410347,0,1,3,Crossing Roadway
+41,Oregon,410358,0,1,3,Crossing Roadway
+41,Oregon,410360,0,1,3,Crossing Roadway
+41,Oregon,410366,0,1,8,"In Roadway - Other (Working, Playing, Etc.)"
+41,Oregon,410366,0,2,8,"In Roadway - Other (Working, Playing, Etc.)"
+41,Oregon,410368,0,1,5,Movement Along Roadway with Traffic (In or Adjacent to Travel Lane)
+41,Oregon,410369,0,1,3,Crossing Roadway
+41,Oregon,410376,0,1,3,Crossing Roadway
+41,Oregon,410382,0,1,3,Crossing Roadway
+41,Oregon,410389,0,1,9,"Stationary and Adjacent to Roadway (e.g., Shoulder, Median, Sidewalk)"
+41,Oregon,410390,0,1,3,Crossing Roadway
+41,Oregon,410397,0,1,3,Crossing Roadway
+41,Oregon,410401,0,1,8,"In Roadway - Other (Working, Playing, Etc.)"
+41,Oregon,410403,0,1,3,Crossing Roadway
+41,Oregon,410404,0,1,3,Crossing Roadway
+41,Oregon,410405,0,1,14,Other (Specify:)
+41,Oregon,410408,0,1,5,Movement Along Roadway with Traffic (In or Adjacent to Travel Lane)
+41,Oregon,410409,0,1,3,Crossing Roadway
+41,Oregon,410411,0,1,8,"In Roadway - Other (Working, Playing, Etc.)"
+41,Oregon,410412,0,1,3,Crossing Roadway
+41,Oregon,410415,0,1,98,Not Reported
+41,Oregon,410420,0,1,3,Crossing Roadway
+41,Oregon,410423,0,1,3,Crossing Roadway
+41,Oregon,410426,0,1,8,"In Roadway - Other (Working, Playing, Etc.)"
+41,Oregon,410429,0,1,5,Movement Along Roadway with Traffic (In or Adjacent to Travel Lane)
+41,Oregon,410430,0,1,3,Crossing Roadway
+41,Oregon,410442,0,1,8,"In Roadway - Other (Working, Playing, Etc.)"
+41,Oregon,410444,0,1,8,"In Roadway - Other (Working, Playing, Etc.)"
+41,Oregon,410447,0,1,3,Crossing Roadway
+41,Oregon,410452,0,1,3,Crossing Roadway

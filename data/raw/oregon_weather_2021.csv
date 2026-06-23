@@ -1,0 +1,563 @@
+STATE,STATENAME,ST_CASE,WEATHER,WEATHERNAME
+41,Oregon,410001,2,Rain
+41,Oregon,410001,10,Cloudy
+41,Oregon,410002,2,Rain
+41,Oregon,410003,98,Not Reported
+41,Oregon,410004,2,Rain
+41,Oregon,410005,10,Cloudy
+41,Oregon,410006,5,"Fog, Smog, Smoke"
+41,Oregon,410006,10,Cloudy
+41,Oregon,410007,5,"Fog, Smog, Smoke"
+41,Oregon,410008,1,Clear
+41,Oregon,410009,1,Clear
+41,Oregon,410010,10,Cloudy
+41,Oregon,410011,5,"Fog, Smog, Smoke"
+41,Oregon,410012,1,Clear
+41,Oregon,410013,2,Rain
+41,Oregon,410014,2,Rain
+41,Oregon,410015,1,Clear
+41,Oregon,410016,10,Cloudy
+41,Oregon,410017,1,Clear
+41,Oregon,410018,2,Rain
+41,Oregon,410019,5,"Fog, Smog, Smoke"
+41,Oregon,410020,1,Clear
+41,Oregon,410021,10,Cloudy
+41,Oregon,410022,2,Rain
+41,Oregon,410023,1,Clear
+41,Oregon,410024,4,Snow
+41,Oregon,410025,98,Not Reported
+41,Oregon,410026,10,Cloudy
+41,Oregon,410027,1,Clear
+41,Oregon,410028,2,Rain
+41,Oregon,410029,10,Cloudy
+41,Oregon,410030,2,Rain
+41,Oregon,410031,2,Rain
+41,Oregon,410032,1,Clear
+41,Oregon,410033,10,Cloudy
+41,Oregon,410034,10,Cloudy
+41,Oregon,410035,1,Clear
+41,Oregon,410036,98,Not Reported
+41,Oregon,410037,1,Clear
+41,Oregon,410038,1,Clear
+41,Oregon,410039,10,Cloudy
+41,Oregon,410040,1,Clear
+41,Oregon,410041,10,Cloudy
+41,Oregon,410042,2,Rain
+41,Oregon,410043,1,Clear
+41,Oregon,410044,1,Clear
+41,Oregon,410045,2,Rain
+41,Oregon,410046,10,Cloudy
+41,Oregon,410047,2,Rain
+41,Oregon,410048,2,Rain
+41,Oregon,410049,10,Cloudy
+41,Oregon,410050,2,Rain
+41,Oregon,410051,10,Cloudy
+41,Oregon,410052,2,Rain
+41,Oregon,410053,2,Rain
+41,Oregon,410054,1,Clear
+41,Oregon,410055,2,Rain
+41,Oregon,410056,2,Rain
+41,Oregon,410057,2,Rain
+41,Oregon,410058,1,Clear
+41,Oregon,410059,1,Clear
+41,Oregon,410060,1,Clear
+41,Oregon,410061,10,Cloudy
+41,Oregon,410062,1,Clear
+41,Oregon,410063,1,Clear
+41,Oregon,410064,1,Clear
+41,Oregon,410065,1,Clear
+41,Oregon,410066,1,Clear
+41,Oregon,410067,10,Cloudy
+41,Oregon,410068,1,Clear
+41,Oregon,410069,5,"Fog, Smog, Smoke"
+41,Oregon,410070,99,Reported as Unknown
+41,Oregon,410071,1,Clear
+41,Oregon,410072,2,Rain
+41,Oregon,410073,10,Cloudy
+41,Oregon,410074,2,Rain
+41,Oregon,410075,1,Clear
+41,Oregon,410076,98,Not Reported
+41,Oregon,410077,2,Rain
+41,Oregon,410078,10,Cloudy
+41,Oregon,410079,1,Clear
+41,Oregon,410080,10,Cloudy
+41,Oregon,410081,1,Clear
+41,Oregon,410082,1,Clear
+41,Oregon,410083,1,Clear
+41,Oregon,410084,1,Clear
+41,Oregon,410085,1,Clear
+41,Oregon,410086,1,Clear
+41,Oregon,410087,10,Cloudy
+41,Oregon,410088,99,Reported as Unknown
+41,Oregon,410089,1,Clear
+41,Oregon,410090,10,Cloudy
+41,Oregon,410091,1,Clear
+41,Oregon,410092,1,Clear
+41,Oregon,410093,1,Clear
+41,Oregon,410094,1,Clear
+41,Oregon,410095,1,Clear
+41,Oregon,410096,1,Clear
+41,Oregon,410097,1,Clear
+41,Oregon,410098,10,Cloudy
+41,Oregon,410099,1,Clear
+41,Oregon,410100,10,Cloudy
+41,Oregon,410101,1,Clear
+41,Oregon,410102,1,Clear
+41,Oregon,410103,1,Clear
+41,Oregon,410104,1,Clear
+41,Oregon,410105,1,Clear
+41,Oregon,410106,1,Clear
+41,Oregon,410107,1,Clear
+41,Oregon,410108,1,Clear
+41,Oregon,410109,1,Clear
+41,Oregon,410110,1,Clear
+41,Oregon,410111,1,Clear
+41,Oregon,410112,1,Clear
+41,Oregon,410113,1,Clear
+41,Oregon,410114,1,Clear
+41,Oregon,410115,1,Clear
+41,Oregon,410116,1,Clear
+41,Oregon,410117,1,Clear
+41,Oregon,410118,1,Clear
+41,Oregon,410119,1,Clear
+41,Oregon,410120,1,Clear
+41,Oregon,410121,10,Cloudy
+41,Oregon,410122,10,Cloudy
+41,Oregon,410123,1,Clear
+41,Oregon,410124,10,Cloudy
+41,Oregon,410125,1,Clear
+41,Oregon,410126,1,Clear
+41,Oregon,410127,1,Clear
+41,Oregon,410128,1,Clear
+41,Oregon,410129,1,Clear
+41,Oregon,410130,1,Clear
+41,Oregon,410131,1,Clear
+41,Oregon,410132,1,Clear
+41,Oregon,410133,1,Clear
+41,Oregon,410134,1,Clear
+41,Oregon,410135,1,Clear
+41,Oregon,410136,1,Clear
+41,Oregon,410138,1,Clear
+41,Oregon,410139,1,Clear
+41,Oregon,410140,1,Clear
+41,Oregon,410141,1,Clear
+41,Oregon,410142,1,Clear
+41,Oregon,410143,1,Clear
+41,Oregon,410144,1,Clear
+41,Oregon,410145,2,Rain
+41,Oregon,410146,1,Clear
+41,Oregon,410147,1,Clear
+41,Oregon,410148,10,Cloudy
+41,Oregon,410149,1,Clear
+41,Oregon,410150,1,Clear
+41,Oregon,410151,1,Clear
+41,Oregon,410152,1,Clear
+41,Oregon,410153,1,Clear
+41,Oregon,410154,1,Clear
+41,Oregon,410155,2,Rain
+41,Oregon,410156,1,Clear
+41,Oregon,410157,1,Clear
+41,Oregon,410158,1,Clear
+41,Oregon,410159,1,Clear
+41,Oregon,410160,1,Clear
+41,Oregon,410161,1,Clear
+41,Oregon,410162,1,Clear
+41,Oregon,410163,1,Clear
+41,Oregon,410164,10,Cloudy
+41,Oregon,410165,1,Clear
+41,Oregon,410166,1,Clear
+41,Oregon,410167,5,"Fog, Smog, Smoke"
+41,Oregon,410168,1,Clear
+41,Oregon,410169,1,Clear
+41,Oregon,410170,1,Clear
+41,Oregon,410171,1,Clear
+41,Oregon,410172,1,Clear
+41,Oregon,410173,1,Clear
+41,Oregon,410174,1,Clear
+41,Oregon,410175,1,Clear
+41,Oregon,410176,1,Clear
+41,Oregon,410177,10,Cloudy
+41,Oregon,410178,1,Clear
+41,Oregon,410179,1,Clear
+41,Oregon,410180,1,Clear
+41,Oregon,410181,1,Clear
+41,Oregon,410182,1,Clear
+41,Oregon,410183,1,Clear
+41,Oregon,410184,1,Clear
+41,Oregon,410185,1,Clear
+41,Oregon,410186,1,Clear
+41,Oregon,410187,1,Clear
+41,Oregon,410188,1,Clear
+41,Oregon,410189,1,Clear
+41,Oregon,410190,1,Clear
+41,Oregon,410191,1,Clear
+41,Oregon,410192,1,Clear
+41,Oregon,410193,1,Clear
+41,Oregon,410194,1,Clear
+41,Oregon,410195,1,Clear
+41,Oregon,410196,1,Clear
+41,Oregon,410197,1,Clear
+41,Oregon,410198,1,Clear
+41,Oregon,410199,98,Not Reported
+41,Oregon,410200,1,Clear
+41,Oregon,410201,1,Clear
+41,Oregon,410202,1,Clear
+41,Oregon,410203,1,Clear
+41,Oregon,410204,1,Clear
+41,Oregon,410205,1,Clear
+41,Oregon,410206,1,Clear
+41,Oregon,410207,1,Clear
+41,Oregon,410208,10,Cloudy
+41,Oregon,410209,5,"Fog, Smog, Smoke"
+41,Oregon,410210,1,Clear
+41,Oregon,410211,1,Clear
+41,Oregon,410212,1,Clear
+41,Oregon,410213,1,Clear
+41,Oregon,410214,1,Clear
+41,Oregon,410215,1,Clear
+41,Oregon,410216,1,Clear
+41,Oregon,410217,1,Clear
+41,Oregon,410218,98,Not Reported
+41,Oregon,410219,1,Clear
+41,Oregon,410220,1,Clear
+41,Oregon,410221,1,Clear
+41,Oregon,410222,1,Clear
+41,Oregon,410223,1,Clear
+41,Oregon,410224,1,Clear
+41,Oregon,410225,1,Clear
+41,Oregon,410226,10,Cloudy
+41,Oregon,410227,4,Snow
+41,Oregon,410228,1,Clear
+41,Oregon,410229,1,Clear
+41,Oregon,410230,1,Clear
+41,Oregon,410231,1,Clear
+41,Oregon,410232,1,Clear
+41,Oregon,410233,1,Clear
+41,Oregon,410234,1,Clear
+41,Oregon,410235,1,Clear
+41,Oregon,410236,1,Clear
+41,Oregon,410237,1,Clear
+41,Oregon,410238,1,Clear
+41,Oregon,410239,1,Clear
+41,Oregon,410240,10,Cloudy
+41,Oregon,410241,98,Not Reported
+41,Oregon,410242,1,Clear
+41,Oregon,410243,1,Clear
+41,Oregon,410246,1,Clear
+41,Oregon,410247,1,Clear
+41,Oregon,410248,98,Not Reported
+41,Oregon,410249,1,Clear
+41,Oregon,410250,1,Clear
+41,Oregon,410251,1,Clear
+41,Oregon,410252,1,Clear
+41,Oregon,410253,1,Clear
+41,Oregon,410254,1,Clear
+41,Oregon,410255,1,Clear
+41,Oregon,410256,1,Clear
+41,Oregon,410257,98,Not Reported
+41,Oregon,410258,1,Clear
+41,Oregon,410259,1,Clear
+41,Oregon,410260,1,Clear
+41,Oregon,410261,1,Clear
+41,Oregon,410262,1,Clear
+41,Oregon,410263,1,Clear
+41,Oregon,410264,10,Cloudy
+41,Oregon,410265,1,Clear
+41,Oregon,410266,10,Cloudy
+41,Oregon,410267,1,Clear
+41,Oregon,410268,98,Not Reported
+41,Oregon,410269,98,Not Reported
+41,Oregon,410270,1,Clear
+41,Oregon,410271,1,Clear
+41,Oregon,410272,1,Clear
+41,Oregon,410273,1,Clear
+41,Oregon,410274,1,Clear
+41,Oregon,410275,1,Clear
+41,Oregon,410276,1,Clear
+41,Oregon,410277,1,Clear
+41,Oregon,410278,1,Clear
+41,Oregon,410279,1,Clear
+41,Oregon,410280,98,Not Reported
+41,Oregon,410281,1,Clear
+41,Oregon,410282,1,Clear
+41,Oregon,410283,1,Clear
+41,Oregon,410284,1,Clear
+41,Oregon,410285,1,Clear
+41,Oregon,410286,1,Clear
+41,Oregon,410287,1,Clear
+41,Oregon,410288,1,Clear
+41,Oregon,410289,1,Clear
+41,Oregon,410290,1,Clear
+41,Oregon,410291,1,Clear
+41,Oregon,410292,1,Clear
+41,Oregon,410294,10,Cloudy
+41,Oregon,410295,1,Clear
+41,Oregon,410296,1,Clear
+41,Oregon,410297,1,Clear
+41,Oregon,410298,1,Clear
+41,Oregon,410299,1,Clear
+41,Oregon,410300,1,Clear
+41,Oregon,410301,1,Clear
+41,Oregon,410302,1,Clear
+41,Oregon,410303,10,Cloudy
+41,Oregon,410304,10,Cloudy
+41,Oregon,410305,98,Not Reported
+41,Oregon,410306,10,Cloudy
+41,Oregon,410307,5,"Fog, Smog, Smoke"
+41,Oregon,410308,10,Cloudy
+41,Oregon,410309,10,Cloudy
+41,Oregon,410310,1,Clear
+41,Oregon,410311,1,Clear
+41,Oregon,410312,98,Not Reported
+41,Oregon,410313,1,Clear
+41,Oregon,410314,1,Clear
+41,Oregon,410315,1,Clear
+41,Oregon,410316,10,Cloudy
+41,Oregon,410317,1,Clear
+41,Oregon,410318,5,"Fog, Smog, Smoke"
+41,Oregon,410319,1,Clear
+41,Oregon,410320,1,Clear
+41,Oregon,410321,1,Clear
+41,Oregon,410322,1,Clear
+41,Oregon,410323,1,Clear
+41,Oregon,410324,1,Clear
+41,Oregon,410325,1,Clear
+41,Oregon,410326,98,Not Reported
+41,Oregon,410327,10,Cloudy
+41,Oregon,410328,1,Clear
+41,Oregon,410329,1,Clear
+41,Oregon,410330,1,Clear
+41,Oregon,410331,1,Clear
+41,Oregon,410332,1,Clear
+41,Oregon,410333,1,Clear
+41,Oregon,410334,2,Rain
+41,Oregon,410334,10,Cloudy
+41,Oregon,410335,10,Cloudy
+41,Oregon,410336,1,Clear
+41,Oregon,410337,1,Clear
+41,Oregon,410339,1,Clear
+41,Oregon,410341,98,Not Reported
+41,Oregon,410342,1,Clear
+41,Oregon,410343,98,Not Reported
+41,Oregon,410344,1,Clear
+41,Oregon,410345,98,Not Reported
+41,Oregon,410346,1,Clear
+41,Oregon,410347,1,Clear
+41,Oregon,410348,1,Clear
+41,Oregon,410349,1,Clear
+41,Oregon,410350,1,Clear
+41,Oregon,410351,1,Clear
+41,Oregon,410352,2,Rain
+41,Oregon,410353,1,Clear
+41,Oregon,410354,1,Clear
+41,Oregon,410355,98,Not Reported
+41,Oregon,410356,98,Not Reported
+41,Oregon,410357,1,Clear
+41,Oregon,410358,1,Clear
+41,Oregon,410359,98,Not Reported
+41,Oregon,410360,1,Clear
+41,Oregon,410361,1,Clear
+41,Oregon,410362,10,Cloudy
+41,Oregon,410363,1,Clear
+41,Oregon,410364,1,Clear
+41,Oregon,410365,1,Clear
+41,Oregon,410366,1,Clear
+41,Oregon,410367,2,Rain
+41,Oregon,410368,10,Cloudy
+41,Oregon,410369,1,Clear
+41,Oregon,410370,10,Cloudy
+41,Oregon,410371,1,Clear
+41,Oregon,410372,1,Clear
+41,Oregon,410373,1,Clear
+41,Oregon,410374,5,"Fog, Smog, Smoke"
+41,Oregon,410375,5,"Fog, Smog, Smoke"
+41,Oregon,410376,10,Cloudy
+41,Oregon,410377,1,Clear
+41,Oregon,410378,10,Cloudy
+41,Oregon,410379,1,Clear
+41,Oregon,410380,1,Clear
+41,Oregon,410381,1,Clear
+41,Oregon,410382,1,Clear
+41,Oregon,410383,1,Clear
+41,Oregon,410384,10,Cloudy
+41,Oregon,410385,1,Clear
+41,Oregon,410386,1,Clear
+41,Oregon,410387,2,Rain
+41,Oregon,410388,10,Cloudy
+41,Oregon,410389,10,Cloudy
+41,Oregon,410390,2,Rain
+41,Oregon,410391,1,Clear
+41,Oregon,410392,1,Clear
+41,Oregon,410393,1,Clear
+41,Oregon,410394,10,Cloudy
+41,Oregon,410395,1,Clear
+41,Oregon,410396,10,Cloudy
+41,Oregon,410397,10,Cloudy
+41,Oregon,410398,1,Clear
+41,Oregon,410399,2,Rain
+41,Oregon,410400,10,Cloudy
+41,Oregon,410401,10,Cloudy
+41,Oregon,410402,99,Reported as Unknown
+41,Oregon,410403,1,Clear
+41,Oregon,410404,98,Not Reported
+41,Oregon,410405,1,Clear
+41,Oregon,410406,98,Not Reported
+41,Oregon,410407,98,Not Reported
+41,Oregon,410408,98,Not Reported
+41,Oregon,410409,1,Clear
+41,Oregon,410410,98,Not Reported
+41,Oregon,410411,98,Not Reported
+41,Oregon,410412,98,Not Reported
+41,Oregon,410413,98,Not Reported
+41,Oregon,410414,98,Not Reported
+41,Oregon,410415,1,Clear
+41,Oregon,410416,1,Clear
+41,Oregon,410417,10,Cloudy
+41,Oregon,410418,98,Not Reported
+41,Oregon,410419,1,Clear
+41,Oregon,410420,1,Clear
+41,Oregon,410421,10,Cloudy
+41,Oregon,410422,1,Clear
+41,Oregon,410423,1,Clear
+41,Oregon,410424,1,Clear
+41,Oregon,410425,98,Not Reported
+41,Oregon,410426,2,Rain
+41,Oregon,410427,1,Clear
+41,Oregon,410428,8,Other
+41,Oregon,410428,10,Cloudy
+41,Oregon,410429,1,Clear
+41,Oregon,410430,2,Rain
+41,Oregon,410431,1,Clear
+41,Oregon,410432,1,Clear
+41,Oregon,410433,1,Clear
+41,Oregon,410434,1,Clear
+41,Oregon,410435,1,Clear
+41,Oregon,410436,10,Cloudy
+41,Oregon,410437,10,Cloudy
+41,Oregon,410438,10,Cloudy
+41,Oregon,410439,1,Clear
+41,Oregon,410440,10,Cloudy
+41,Oregon,410441,1,Clear
+41,Oregon,410442,10,Cloudy
+41,Oregon,410443,10,Cloudy
+41,Oregon,410444,2,Rain
+41,Oregon,410444,6,Severe Crosswinds
+41,Oregon,410445,1,Clear
+41,Oregon,410446,10,Cloudy
+41,Oregon,410447,1,Clear
+41,Oregon,410448,5,"Fog, Smog, Smoke"
+41,Oregon,410449,5,"Fog, Smog, Smoke"
+41,Oregon,410450,1,Clear
+41,Oregon,410451,10,Cloudy
+41,Oregon,410452,10,Cloudy
+41,Oregon,410453,2,Rain
+41,Oregon,410454,10,Cloudy
+41,Oregon,410455,10,Cloudy
+41,Oregon,410456,10,Cloudy
+41,Oregon,410457,10,Cloudy
+41,Oregon,410458,1,Clear
+41,Oregon,410459,1,Clear
+41,Oregon,410460,1,Clear
+41,Oregon,410461,2,Rain
+41,Oregon,410462,98,Not Reported
+41,Oregon,410463,1,Clear
+41,Oregon,410464,2,Rain
+41,Oregon,410465,1,Clear
+41,Oregon,410466,99,Reported as Unknown
+41,Oregon,410467,2,Rain
+41,Oregon,410467,10,Cloudy
+41,Oregon,410468,4,Snow
+41,Oregon,410469,1,Clear
+41,Oregon,410470,10,Cloudy
+41,Oregon,410471,4,Snow
+41,Oregon,410472,4,Snow
+41,Oregon,410473,2,Rain
+41,Oregon,410474,2,Rain
+41,Oregon,410475,5,"Fog, Smog, Smoke"
+41,Oregon,410476,2,Rain
+41,Oregon,410477,1,Clear
+41,Oregon,410478,2,Rain
+41,Oregon,410479,2,Rain
+41,Oregon,410479,10,Cloudy
+41,Oregon,410480,5,"Fog, Smog, Smoke"
+41,Oregon,410481,1,Clear
+41,Oregon,410483,2,Rain
+41,Oregon,410484,10,Cloudy
+41,Oregon,410485,1,Clear
+41,Oregon,410486,4,Snow
+41,Oregon,410486,10,Cloudy
+41,Oregon,410486,12,Freezing Rain or Drizzle
+41,Oregon,410487,10,Cloudy
+41,Oregon,410488,1,Clear
+41,Oregon,410489,1,Clear
+41,Oregon,410490,1,Clear
+41,Oregon,410491,10,Cloudy
+41,Oregon,410492,98,Not Reported
+41,Oregon,410493,1,Clear
+41,Oregon,410494,10,Cloudy
+41,Oregon,410496,1,Clear
+41,Oregon,410497,10,Cloudy
+41,Oregon,410498,1,Clear
+41,Oregon,410499,98,Not Reported
+41,Oregon,410500,98,Not Reported
+41,Oregon,410501,1,Clear
+41,Oregon,410502,98,Not Reported
+41,Oregon,410503,98,Not Reported
+41,Oregon,410504,98,Not Reported
+41,Oregon,410505,1,Clear
+41,Oregon,410506,1,Clear
+41,Oregon,410507,98,Not Reported
+41,Oregon,410508,1,Clear
+41,Oregon,410509,1,Clear
+41,Oregon,410510,98,Not Reported
+41,Oregon,410511,1,Clear
+41,Oregon,410512,10,Cloudy
+41,Oregon,410513,1,Clear
+41,Oregon,410514,1,Clear
+41,Oregon,410515,98,Not Reported
+41,Oregon,410516,98,Not Reported
+41,Oregon,410517,2,Rain
+41,Oregon,410518,98,Not Reported
+41,Oregon,410519,10,Cloudy
+41,Oregon,410520,2,Rain
+41,Oregon,410521,98,Not Reported
+41,Oregon,410522,2,Rain
+41,Oregon,410523,10,Cloudy
+41,Oregon,410524,1,Clear
+41,Oregon,410525,1,Clear
+41,Oregon,410526,98,Not Reported
+41,Oregon,410527,1,Clear
+41,Oregon,410528,98,Not Reported
+41,Oregon,410529,2,Rain
+41,Oregon,410530,98,Not Reported
+41,Oregon,410531,2,Rain
+41,Oregon,410532,10,Cloudy
+41,Oregon,410533,5,"Fog, Smog, Smoke"
+41,Oregon,410534,2,Rain
+41,Oregon,410535,4,Snow
+41,Oregon,410536,2,Rain
+41,Oregon,410537,2,Rain
+41,Oregon,410539,2,Rain
+41,Oregon,410540,5,"Fog, Smog, Smoke"
+41,Oregon,410541,98,Not Reported
+41,Oregon,410542,10,Cloudy
+41,Oregon,410543,2,Rain
+41,Oregon,410545,1,Clear
+41,Oregon,410546,2,Rain
+41,Oregon,410547,1,Clear
+41,Oregon,410548,10,Cloudy
+41,Oregon,410549,1,Clear
+41,Oregon,410550,10,Cloudy
+41,Oregon,410551,10,Cloudy
+41,Oregon,410552,98,Not Reported
+41,Oregon,410553,98,Not Reported
+41,Oregon,410554,1,Clear
+41,Oregon,410556,1,Clear
+41,Oregon,410557,10,Cloudy
+41,Oregon,410558,10,Cloudy
+41,Oregon,410559,98,Not Reported
+41,Oregon,410561,98,Not Reported
+41,Oregon,410563,2,Rain
+41,Oregon,410564,1,Clear
+41,Oregon,410565,4,Snow
+41,Oregon,410565,10,Cloudy
