@@ -10,7 +10,7 @@ Due to the relational structure of the FARS database and the massive size of the
 
 ## Dataset registry
 
-### Dataset 1: Oregon FARS Infrastructure Master (2015-2024)
+### Dataset 1: Oregon FARS Master Dataset (2015-2024)
 
 - **Source:** National Highway Traffic Safety Administration (NHTSA) FARS FTP.
 - **License:** Public Domain (U.S. Government Open Data).
