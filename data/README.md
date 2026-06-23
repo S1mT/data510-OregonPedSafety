@@ -1,42 +1,24 @@
-# `data/`
+## Raw Data Provenance
+The analysis relies on raw data originating from the National Highway Traffic Safety Administration's (NHTSA) Fatality Analysis Reporting System (FARS) from 2015 to 2024. 
 
-Project data lives here. The repo root `.gitignore` excludes large or sensitive subfolders by default. The structure below is the convention you should follow.
+Due to the relational structure of the FARS database and the massive size of the national files, the raw data is not committed to this repository. The raw extraction process relies on the following annual national tables stored locally in `data/raw/`:
+* `accident.csv` (Crash-level environmental and temporal factors)
+* `person.csv` (Demographics and non-motorist identifiers)
+* `pbtype.csv` (Pedestrian/Bicyclist positioning relative to infrastructure)
+* `vehicle.csv` (Infrastructure features governing the striking vehicle)
+* `weather.csv` (Supplemental multi-condition weather reporting)
 
-```
-data/
-  raw/         # original inputs, never edited in place        (gitignored)
-  external/    # third-party data you did not generate         (gitignored)
-  interim/     # intermediate scratch outputs                  (gitignored)
-  processed/   # cleaned, analysis-ready snapshots (committable if small)
-  README.md    # describe each dataset: source, license, date, size
-  SCHEMA.md    # describe processed dataset schemas once they stabilize
-```
+## Dataset registry
 
-## What to **always** commit
+### Dataset 1: Oregon FARS Infrastructure Master (2015-2024)
 
-- This `README.md` describing every dataset, with: source URL or contact, license, date pulled, approximate size, who in the team owns it, and any ethics / consent notes.
-- A `SCHEMA.md` documenting the columns, types, and units of your processed datasets, once they stabilize.
-- Small (< 1 MB) reproducible processed snapshots under `data/processed/` if your analysis depends on a specific version.
-
-## What to **never** commit
-
-- Personally identifiable information (PII), protected health information (PHI), or any data subject to a data use agreement that forbids redistribution.
-- Credentials, API keys, OAuth tokens, or `.env` files.
-- Multi-megabyte raw downloads. Document how to fetch them in this README instead.
-
-## Dataset registry (fill in)
-
-### Dataset 1: <name>
-
-- **Source:** <URL or contact>
-- **License:** <name and short summary>
-- **Date pulled:** <YYYY-MM-DD>
-- **Approximate size:** <rows, columns, bytes>
-- **Owner on this project:** <name>
-- **Where it lives in this repo:** `data/raw/<name>/` (gitignored) or `data/processed/<name>.csv`
-- **Ethics / consent notes:** <PII? consent process? data use agreement?>
-- **How to fetch (for a teammate cloning fresh):** <command, script, or contact>
-
-### Dataset 2: <name>
-
-- ...
+- **Source:** National Highway Traffic Safety Administration (NHTSA) FARS FTP.
+- **License:** Public Domain (U.S. Government Open Data).
+- **Date pulled:** 2026-06-22
+- **Approximate size:** 1,049 rows, 25 columns
+- **Owner on this project:** Simon Thompson
+- **Where it lives in this repo:** `data/processed/oregon_fars_infrastructure_only_2015_2024.csv`
+- **Ethics / consent notes:** Publicly available fatal crash data. Anonymized by NHTSA; contains no Personally Identifiable Information (PII) or Protected Health Information (PHI). Victim identification relies strictly on randomized `ST_CASE` and `PER_NO` indexing.
+- **How to fetch (for a teammate cloning fresh):** 1. Download the raw national CSV zip folders for 2015-2024 from the NHTSA FARS data portal.
+  2. Run `clean.py` to extract and parse the Oregon-specific records (stripping invisible BOM characters) into `data/raw/`.
+  3. Execute `MasterFull.py` to merge the relational tables and compile this final processed dataset.
