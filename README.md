@@ -1,4 +1,4 @@
-# Fatal Pedestrian and Cyclist Crash Risk Factors in Oregon (2015–2024)
+# Fatal Pedestrian and Cyclist Crash Risk Factors in Oregon (2015-2024)
 
 A data science project using NHTSA FARS data to identify environmental, roadway, and demographic factors associated with fatal pedestrian and cyclist crashes across Oregon.
 
