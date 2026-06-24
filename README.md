@@ -86,7 +86,7 @@ One subsection per class week. The owner team commits the new section **before e
 - PBI-003 Build Analysis-Ready Master Dataset
 
 **Stakeholder response log**
-- 
+- n/a
 
 **Plan for next iteration**
 - Develop Oregon extraction workflow (`M2-data-summary`)
@@ -111,7 +111,7 @@ One subsection per class week. The owner team commits the new section **before e
 - PBI-004 Profile Dataset Quality
 
 **Stakeholder response log**
-- 
+- n/a
 
 **Plan for next iteration**
 - Complete dataset integration workflow (`M2-data-summary`)
@@ -133,7 +133,7 @@ One subsection per class week. The owner team commits the new section **before e
 - PBI-005 Produce Data Summary Deliverable
 
 **Stakeholder response log**
-- 
+- n/a
 
 **Plan for next iteration**
 - PBI-006 Generate exploratory visualizations (`M3-poster-draft`)
