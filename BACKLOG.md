@@ -101,3 +101,113 @@ This file is the **human-readable mirror** of the [GitHub Projects (v2) Iterativ
 - **Tag:** `M3-poster-draft`
 - **Size:** L
 - **GitHub issue:** ...
+
+### PBI-009
+
+- **Title:** Enrich Crash Records with Census Tract Demographics
+- **Hypothesis:** Adding tract-level socioeconomic and commuting characteristics will support a more meaningful transportation-equity analysis.
+- **Create:** Develop `enrich.py` to spatially join crash coordinates to Oregon census tracts and merge ACS 5-year estimates into `FARSmaster.csv`.
+- **Observe:** Verify coordinate filtering, tract assignment, GEOID joins, demographic coverage, and final row/column counts.
+- **Analyze:** Confirm that income, race/ethnicity, and transit/walking commute variables are sufficiently complete for descriptive and statistical analysis.
+- **Tag:** `M2-data-summary`
+- **Size:** L
+- **GitHub issue:** ...
+
+### PBI-010
+
+- **Title:** Establish the M3 Analysis and Communication Plan
+- **Hypothesis:** Mapping each research question to specific spatial, statistical, and machine-learning outputs will keep the poster and write-up coherent.
+- **Create:** Define the M3 workflow for EDA, density mapping, hotspot analysis, geographic comparisons, hypothesis testing, predictive modeling, and equity analysis.
+- **Observe:** Compare the proposed analyses against the M3 poster rubric and available variables in `FARSmaster.csv`.
+- **Analyze:** Prioritize analyses that directly support the research questions and defer methods that cannot be justified by the data.
+- **Tag:** `M3-poster-draft`
+- **Size:** S
+- **GitHub issue:** ...
+
+### PBI-011
+
+- **Title:** Draft the Capstone Write-Up Structure and Methods
+- **Hypothesis:** Drafting the full narrative before final results are available will make it easier to transfer concise content into the poster.
+- **Create:** Populate `writeup.qmd` with the introduction, data, engineering, planned methods, ethics, limitations, and reproducibility sections while preserving existing project metadata and research questions.
+- **Observe:** Check the draft against the M3 poster and M4 write-up requirements and identify explicit placeholders for results and figures.
+- **Analyze:** Determine which portions can be reused directly in the poster and which require further evidence before finalization.
+- **Tag:** `M4-writeup-draft`
+- **Size:** M
+- **GitHub issue:** ...
+
+### PBI-012
+
+- **Title:** Produce Statewide Crash Density and Hotspot Maps
+- **Hypothesis:** Fatal pedestrian and cyclist crashes form visible statewide concentrations and statistically meaningful local clusters.
+- **Create:** Generate a KDE or hexbin density map and run DBSCAN or HDBSCAN on valid crash coordinates.
+- **Observe:** Compare cluster counts, noise points, geographic concentration, and sensitivity to clustering parameters.
+- **Analyze:** Identify defensible hotspot areas or corridors and document that clusters reflect fatal-crash concentration rather than exposure-adjusted risk.
+- **Tag:** `M3-poster-draft`
+- **Size:** L
+- **GitHub issue:** ...
+
+### PBI-013
+
+- **Title:** Compare Fatal Crashes Across Oregon Geographies
+- **Hypothesis:** Fatal pedestrian and cyclist crashes are unevenly distributed across counties, cities, and urban/rural settings.
+- **Create:** Produce county, city, and urban/rural summaries with normalized comparisons where suitable denominators are available.
+- **Observe:** Rank geographic areas by crash and victim counts and inspect whether results are driven by population concentration or a small number of events.
+- **Analyze:** Select the most interpretable geographic comparison for the poster and explain the limitations of raw-count comparisons.
+- **Tag:** `M3-poster-draft`
+- **Size:** M
+- **GitHub issue:** ...
+
+### PBI-014
+
+- **Title:** Test Associations Between Crash Characteristics
+- **Hypothesis:** Selected roadway, environmental, temporal, and demographic variables are statistically associated with meaningful crash-group differences.
+- **Create:** Define appropriate categorical outcomes or group comparisons and run chi-square tests with effect-size measures and assumption checks.
+- **Observe:** Review expected cell counts, p-values, effect sizes, and multiple-comparison concerns.
+- **Analyze:** Retain only tests that are substantively meaningful and avoid treating statistical association as causation.
+- **Tag:** `M3-poster-draft`
+- **Size:** M
+- **GitHub issue:** ...
+
+### PBI-015
+
+- **Title:** Rank Crash Factors with an Interpretable Machine-Learning Model
+- **Hypothesis:** A Random Forest model can rank roadway, environmental, temporal, and demographic variables associated with a clearly defined crash outcome.
+- **Create:** Build a preprocessing and Random Forest workflow with a documented target, baseline, train/test or cross-validation strategy, and class-imbalance handling if needed.
+- **Observe:** Evaluate predictive performance, permutation or model-based feature importance, and stability across validation folds.
+- **Analyze:** Report the strongest predictors cautiously, distinguish prediction from causation, and compare findings with descriptive and statistical results.
+- **Tag:** `M3-poster-draft`
+- **Size:** L
+- **GitHub issue:** ...
+
+### PBI-016
+
+- **Title:** Evaluate Transportation Equity Patterns
+- **Hypothesis:** Fatal crash concentrations differ across census tracts with different income, demographic, and transit/walking commute characteristics.
+- **Create:** Summarize crash records across tract-level socioeconomic groups and fit an appropriate statistical model or comparison framework.
+- **Observe:** Examine concentration patterns by income and demographic measures while checking sparsity, collinearity, and tract-level aggregation limits.
+- **Analyze:** Determine whether the evidence supports an equity-related finding and clearly state the absence of pedestrian, cyclist, and vehicle exposure measures.
+- **Tag:** `M4-writeup-draft`
+- **Size:** L
+- **GitHub issue:** ...
+
+### PBI-017
+
+- **Title:** Assemble the M3 Poster Rough Draft
+- **Hypothesis:** A complete conference-style draft with honest preliminary findings will enable useful peer critique before final analysis is complete.
+- **Create:** Build the poster with labeled sections for the question, stakeholders, data pipeline, ethics, methods, preliminary results, limitations, conclusions, reproducibility, and references.
+- **Observe:** Check readability, figure captions, claim-evidence alignment, repository links, and rubric coverage.
+- **Analyze:** Record peer and instructor feedback and convert required revisions into M4 and M5 backlog items.
+- **Tag:** `M3-poster-draft`
+- **Size:** L
+- **GitHub issue:** ...
+
+### PBI-018
+
+- **Title:** Finalize Results, Recommendations, and Reproducibility
+- **Hypothesis:** Integrating spatial, statistical, machine-learning, and equity findings will support a defensible final report and actionable transportation-safety recommendations.
+- **Create:** Finalize figures, tables, model documentation, recommendations, references, and reproducibility instructions for the write-up and poster.
+- **Observe:** Verify that every claim is traceable to an analysis artifact and that all final deliverables render successfully from the repository.
+- **Analyze:** Reconcile conflicting findings, state limitations, and produce two or three recommendations supported by the available evidence.
+- **Tag:** `M5-final`
+- **Size:** XL
+- **GitHub issue:** ...
