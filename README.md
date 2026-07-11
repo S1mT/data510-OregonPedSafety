@@ -152,59 +152,100 @@ One subsection per class week. The owner team commits the new section **before e
 
 ## Week 8
 
-**Iteration ending:** <date>
+**Iteration ending:** July 5, 2026  
 **Milestone tag in focus:** `M3-poster-draft`
 
 **Completed PBIs**
-- ...
+- PBI-009 Enrich Crash Records with Census Tract Demographics
+- Completed the two-stage processing workflow using `initial.py` and `enrich.py`
+- Produced the final `FARSmaster.csv` dataset with census tract, income, demographic, and transit/walking commute variables
+- Confirmed the statewide analysis scope and finalized the M2 data freeze
+
+**In-flight (carrying across the boundary)**
+- PBI-006 Generate Exploratory Visualizations
+- PBI-010 Establish the M3 Analysis and Communication Plan
 
 **Stakeholder response log**
-- ...
+- No additional formal Studio Brief or Studio Critique feedback was recorded for this iteration.
 
 **Plan for next iteration**
-- ...
+- Complete core exploratory summaries and visualizations (`M3-poster-draft`)
+- Finalize the spatial, statistical, machine-learning, and equity analysis plan (`M3-poster-draft`)
+- Begin drafting the full write-up structure so content can be condensed into the poster (`M4-writeup-draft`)
 
 **Risks and impediments**
-- ...
+- The final dataset contains only fatal crashes, so analyses cannot estimate the probability that an arbitrary crash becomes fatal.
+- Several roadway variables have substantial `Not Reported` values.
+- Census attributes are measured at the tract level and should not be interpreted as individual victim characteristics.
 
 ## Week 9
 
-**Iteration ending:** <date>
+**Iteration ending:** July 12, 2026  
 **Milestone tag in focus:** `M3-poster-draft`
 
 **Completed PBIs**
-- ...
+- PBI-010 Establish the M3 Analysis and Communication Plan
+- PBI-011 Draft the Capstone Write-Up Structure and Methods
+- Defined the planned analysis sequence: EDA, density mapping, DBSCAN/HDBSCAN hotspots, geographic comparisons, chi-square testing, Random Forest modeling, and transportation-equity analysis
+- Drafted the non-results portions of `writeup.qmd`, including the data pipeline, planned methods, ethics, limitations, and reproducibility narrative
+
+**In-flight (carrying across the boundary)**
+- PBI-006 Generate Exploratory Visualizations
+- PBI-007 Identify Crash Hotspots and Spatial Clusters
+- PBI-008 Develop Predictive Modeling Workflow
+- PBI-017 Assemble the M3 Poster Rough Draft
 
 **Stakeholder response log**
-- ...
+- No additional formal Studio Brief or Studio Critique feedback was recorded for this iteration.
 
 **Plan for next iteration**
-- ...
+- Complete and select at least three poster-ready figures (`M3-poster-draft`)
+- Produce statewide density and hotspot maps (`M3-poster-draft`)
+- Complete preliminary statistical and Random Forest results (`M3-poster-draft`)
+- Assemble and submit the complete M3 poster rough draft (`M3-poster-draft`)
 
 **Risks and impediments**
-- ...
+- A defensible predictive target must be defined because every observation in FARS is already part of a fatal crash.
+- Cluster and geographic results may identify concentrations but cannot establish exposure-adjusted risk without pedestrian, cyclist, traffic, or population denominators.
+- The poster deadline requires prioritizing a small number of well-supported findings over a large number of incomplete analyses.
 
 ## Week 10 -- Poster rough-draft milestone (M3)
 
-**Iteration ending:** <date>
-**Milestone tag in focus:** `M3-poster-draft`
+**Iteration ending:** July 19, 2026  
+**Milestone due:** July 12, 2026  
+**Milestone tag in focus:** `M3-poster-draft` / `M4-writeup-draft`
 
 **Completed PBIs**
-- ...
+- PBI-012 Produce Statewide Crash Density and Hotspot Maps
+- PBI-013 Compare Fatal Crashes Across Oregon Geographies
+- PBI-014 Test Associations Between Crash Characteristics
+- PBI-015 Rank Crash Factors with an Interpretable Machine-Learning Model
+- PBI-017 Assemble the M3 Poster Rough Draft
+- Submitted the M3 poster rough draft by July 12, 2026
+
+**In-flight (carrying across the boundary)**
+- PBI-016 Evaluate Transportation Equity Patterns
+- Revisions to `writeup.qmd` based on completed analyses and M3 feedback
 
 **Stakeholder response log**
-- ...
+- Record the Week 10 milestone-boundary Studio Brief, Studio Critique, and instructor feedback here.
+- Document which recommendations were adopted, deferred, or declined.
 
 **Plan for next iteration**
-- ...
+- Incorporate poster feedback into the full write-up (`M4-writeup-draft`)
+- Complete unfinished statistical, machine-learning, and equity analyses (`M4-writeup-draft`)
+- Replace preliminary poster claims with validated results in the write-up
+- Add finalized figures, captions, interpretations, and model evaluation results
 
 **Risks and impediments**
-- ...
+- Some M3 findings may need revision after deeper model validation.
+- Model interpretation may be limited by missing roadway data and the absence of nonfatal comparison records.
+- Census tract characteristics cannot be attributed to individual crash victims.
 
 **Retrospective (milestone boundary)**
-- What worked: ...
-- What did not: ...
-- One change for next iteration: ...
+- What worked: To be completed after M3 submission and critique.
+- What did not: To be completed after M3 submission and critique.
+- One change for next iteration: To be completed after peer and instructor feedback.
 
 ## Week 11
 
