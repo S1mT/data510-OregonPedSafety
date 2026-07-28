@@ -1,6 +1,6 @@
 ---
 title: "Capstone Project Write-Up"
-subtitle: "Replace with your project title"
+subtitle: "Fatal Pedestrian and Cyclist Crash Risk Factors in Oregon: A Spatial and Predictive Analysis"
 author:
   - "Simon Thompson"
   - "Rohan Srinivasa Babu"
