@@ -1,6 +1,6 @@
 ---
 title: "Capstone Project Write-Up"
-subtitle: "Fatal Pedestrian and Cyclist Crash Risk Factors in Oregon: A Spatial Analysis (2015–2024)"
+subtitle: "Fatal Pedestrian and Cyclist Crash Risk Factors in Oregon: A Spatial Analysis (2015-2024)"
 author:
   - "Simon Thompson"
   - "Rohan Srinivasa Babu"
@@ -256,7 +256,7 @@ Pearson correlation coefficients were then calculated between the tract-level fa
 
 The poster also includes grouped comparisons of average fatal crash rates by income and Black population share. The exact category definitions and inferential significance tests are still being finalized.
 
-**TODO for final write-up:** add p-values, confidence intervals, multiple-testing considerations, exact grouping thresholds, the number of tracts included, and sensitivity analyses for small-population tracts.
+**TODO for final write-up:** add p-values, confidence intervals, multiple-testing considerations, exact grouping thresholds, and the number of tracts included.
 
 ## Evaluation strategy
 
@@ -278,12 +278,12 @@ The statewide map shows fatal pedestrian and cyclist victim records distributed 
 
 ::: {.callout-note}
 **Figure placeholder 1 — Statewide fatal-crash map and DBSCAN clusters.**  
-Insert the final exported statewide map. Caption should report the number of victim records, valid geocoded records, total clusters, clustered fatalities, and DBSCAN parameters.
+Insert the final exported statewide map. Caption will report the number of victim records, valid geocoded records, total clusters, clustered fatalities, and DBSCAN parameters.
 :::
 
 ::: {.callout-note}
 **Figure placeholder 2 — Selected hotspot maps.**  
-Insert the Southeast 82nd Avenue and Southeast 181st Avenue hotspot maps. Caption should identify the cluster, location, number of fatalities, map scale, and the purpose of the 200-meter buffer shown in the draft poster.
+Insert the Southeast 82nd Avenue and Southeast 181st Avenue hotspot maps. Caption will identify the cluster, location, number of fatalities, map scale, and the purpose of the 200-meter buffer shown in the draft poster.
 :::
 
 ## Infrastructure profile of clustered locations
@@ -315,13 +315,13 @@ The tract-level Pearson correlations reported in the draft poster were:
 | Percent Hispanic | 0.002 |
 | Percent transit/walking commuters | 0.185 |
 
-The observed relationships are weak in magnitude. Median income and percentage White have small negative associations with fatal crash rate, while percentage Black and transit/walking commute share have small positive associations. Percentage Hispanic is effectively uncorrelated with the rate in this draft analysis. The largest coefficient is the positive correlation with percentage Black (`r = 0.202`), but it remains modest and should not be interpreted as evidence of causation or disproportionate burden until significance tests, uncertainty estimates, and sensitivity analyses are completed.
+The observed relationships are weak in magnitude. Median income and percentage White have small negative associations with fatal crash rate, while percentage Black and transit/walking commute share have small positive associations. Percentage Hispanic is effectively uncorrelated with the rate in this draft analysis. The largest coefficient is the positive correlation with percentage Black (`r = 0.202`), but it remains modest and should not be interpreted as evidence of causation or disproportionate burden until significance tests and uncertainty estimates are completed.
 
 The grouped poster charts show higher average fatal crash rates in lower-income categories and variation across Black population-share categories. Because the exact cut points and inferential tests are still being finalized, the current write-up treats these charts as descriptive evidence only.
 
 ::: {.callout-note}
 **Figure placeholder 4 — Correlation table and grouped demographic comparisons.**  
-Insert the final correlation visualization and average-rate charts. Captions should state the unit of analysis, tract count, group definitions, treatment of zero-crash tracts, and whether error bars or confidence intervals are displayed.
+Insert the final correlation visualization and average-rate charts. Captions will state the unit of analysis, tract count, group definitions, and treatment of zero-crash tracts.
 :::
 
 # Discussion, Limitations, and Future Work
@@ -358,11 +358,9 @@ Before the final submission, the project will:
 
 - complete significance tests and uncertainty estimates for tract-level associations;
 - document the number, size, and location of all DBSCAN clusters;
-- test whether key findings persist under alternative clustering parameters;
 - clarify demographic grouping thresholds and include tract sample sizes;
 - consolidate analysis code and final figure-generation scripts;
 - add complete figure captions, axis labels, units, and reproducibility instructions;
-- consider crash-level rather than victim-level aggregation where appropriate.
 
 Longer-term extensions should integrate non-fatal crash records, pedestrian and cyclist exposure, traffic volume, posted and operating speeds, crossing infrastructure, lane counts, and historical roadway changes. Those additions would support stronger comparative and potentially predictive analyses.
 
