@@ -1,6 +1,6 @@
 ---
 title: "Capstone Project Write-Up"
-subtitle: "Replace with your project title"
+subtitle: "Fatal Pedestrian and Cyclist Crash Risk Factors in Oregon: A Spatial Analysis (2015-2024)"
 author:
   - "Simon Thompson"
   - "Rohan Srinivasa Babu"
@@ -18,187 +18,403 @@ execute:
   echo: true
   warning: false
   message: false
+jupyter: python3
 ---
-
-<!--
-  DATA 510 write-up skeleton (Week 5 Quarto lecture).
-
-  Copy this file to your DS3 repo:
-    deliverables/M4-writeup-draft/writeup.qmd
-
-  Week 5: paste prose from your M1 proposal into Introduction, Data, Ethics, Methods.
-  Week 7+: replace stubs with real results from notebooks/ and src/.
-  Week 12 (M4): methods and findings should be stable; render PDF + HTML for submission.
--->
 
 # Title, Team, and Affiliations
 
-**Project title:** *Fatal Pedestrian and Cyclist Crash Risk Factors in Oregon: A Spatial and Predictive Analysis *
+**Project title:** *Fatal Pedestrian and Cyclist Crash Risk Factors in Oregon: A Spatial Analysis (2015–2024)*
 
-| Name | Role | Willamette email |
-| Simon Thompson | Owner Product Lead | sthompson2@willamette.edu |
-| Rohan Srinivasa Babu | Owner Team | rsrinivasababu@willamette.edu |
+| Team member | Project role | Email |
+|---|---|---|
+| Simon Thompson | Owner Product Lead; data engineering and spatial analysis | sthompson2@willamette.edu |
+| Rohan Srinivasa Babu | Statistical analysis, interpretation, and communication | rsrinivasababu@willamette.edu |
 
+**Peer Stakeholder Product Owners**
 
-**Peer Stakeholder POs:** *(from lookup)*
-| Name | Role | Willamette email |
-|Aiyana Brown | Peer Stakeholder | acbrown2@willamette.edu |
-|Amaya Supancich-McCord | Peer Stakeholder | asupancichmccord@willamette.edu |
-|Seira Ramchandani | Peer Stakeholder | sramchandani@willamette.edu |
+| Peer stakeholder | Role | Email |
+|---|---|---|
+| Aiyana Brown | Peer Stakeholder Product Owner | acbrown2@willamette.edu |
+| Amaya Supancich-McCord | Peer Stakeholder Product Owner | asupancichmccord@willamette.edu |
+| Seira Ramchandani | Peer Stakeholder Product Owner | sramchandani@willamette.edu |
 
-**Repository:** `https://github.com/S1mT/data510-OregonPedSafety`
+**Affiliation:** DATA 510 Data Science Capstone, Willamette University, Summer 2026  
+**Repository:** <https://github.com/S1mT/data510-OregonPedSafety>
 
 # Abstract
 
-*(150 to 250 words after you have results. Summarize: problem, approach, key finding, impact, limitation. Write this section last.)*
+Fatal pedestrian and cyclist crashes are not distributed evenly across Oregon. This project uses 2015–2024 records from the National Highway Traffic Safety Administration's Fatality Analysis Reporting System (FARS), enriched with U.S. Census Bureau American Community Survey (ACS) data, to examine where fatal non-motorist crashes concentrate and which roadway, environmental, temporal, and community characteristics are associated with them. A reproducible two-stage pipeline integrates five annual FARS tables, assigns valid crash coordinates to Oregon Census tracts, and appends tract-level demographic and commuting measures. The final dataset contains 1,049 fatal pedestrian and cyclist victim records representing 490 unique crashes and 38 analysis variables. Spatial clustering with DBSCAN identifies localized hotspots using a 200-meter radius and a minimum of two fatalities. Hotspot profiling indicates that arterial roads, non-intersection locations, and two-way roads with continuous left-turn lanes occur more frequently within identified clusters than in the statewide dataset. Tract-level correlations with fatal crash rates are weak in magnitude, including a negative association with median income and positive associations with Black population share and transit or walking commute share. These results are descriptive and do not establish causality. They are intended to help Oregon transportation agencies identify corridors and communities that warrant closer local investigation, additional data collection, and targeted safety investment.
 
 # Introduction: Problem and Research Questions
 
-<!-- Paste and revise from M1 proposal Section 2. Note any changes since M1. -->
+## Problem statement
 
-**Problem statement:**
+Pedestrians and cyclists are among the most physically vulnerable users of the transportation system. When a collision occurs, they have little protection from vehicle mass and speed. Fatal crashes may also reflect recurring patterns in road design, lighting, speed environment, location, and surrounding community conditions. Identifying those patterns can help transportation agencies move from reacting to individual crashes toward prioritizing locations for further safety investigation and investment.
 
-Pedestrians and cyclists remain among the most vulnerable users of the transportation network. While motor vehicle safety has improved substantially over recent decades, pedestrian and cyclist fatalities continue to represent a significant public health and transportation safety concern. Understanding where these fatalities occur and the environmental, roadway, and demographic factors associated with them can help transportation planners prioritize interventions and allocate limited safety resources more effectively.
+FARS provides a standardized national census of police-reported motor-vehicle traffic crashes involving at least one fatality [@nhtsaFARS]. This project focuses specifically on fatal pedestrian and cyclist crashes in Oregon between 2015 and 2024. The analysis combines crash circumstances, infrastructure variables, spatial clustering, and Census tract context to describe both where fatalities concentrate and what characteristics are common in those locations.
 
-This proposal is consistent with the project Vision and Mission established in the project charter. We seek to identify factors associated with fatal pedestrian and cyclist crashes and provide evidence-based recommendations for transportation safety improvements.
+## Research questions
 
-**Primary research question:**
+**Primary research question:** Which environmental, roadway, and temporal factors are most strongly associated with fatal pedestrian and cyclist crashes in Oregon between 2015 and 2024?
 
-Which environmental, roadway, and temporal factors are most strongly associated with fatal pedestrian and cyclist crashes in Oregon between 2015 and 2024?
+**Secondary research question:** Are fatal pedestrian and cyclist crashes disproportionately concentrated in Oregon communities with particular demographic or socioeconomic characteristics between 2015 and 2024?
 
-**Secondary questions (if any):**
+## Changes since the M1 proposal
 
-Are fatal pedestrian and cyclist crashes disproportionately concentrated in areas with certain identifiable demographics (race, ethnicity, income, etc.) in Oregon between 2015 and 2024?
-
-**Changes since M1 proposal:** *(none yet, or explain pivot)*
+The original charter focused on the Salem area. After data acquisition and validation, the geographic scope was expanded to statewide Oregon. The statewide FARS extract offered a more complete and analytically useful sample while preserving the project's transportation-safety purpose. The title has also been revised to remove the phrase *predictive analysis*. A supervised predictive model was not included in this draft because the dataset contains only crashes involving at least one fatality and therefore lacks a defensible non-fatal or no-crash comparison group. Training a model to predict fatality from a fatal-only sample would create an ill-defined target and could produce misleading performance claims. The current analysis instead emphasizes spatial clustering, descriptive infrastructure profiling, and tract-level statistical associations. A predictive component may be reconsidered only if a valid comparison dataset and clearly defined outcome are added later.
 
 # Impact and Stakeholders
 
-<!-- Paste from M1 proposal Section 3. -->
+**Pedestrians and cyclists** are the primary affected stakeholders because they bear the direct safety consequences of hazardous roadway conditions. The project does not assign individual responsibility for crashes; instead, it examines recurring system-level patterns that may indicate locations requiring closer review.
 
-Pedestrians and Cyclists: Pedestrians and cyclists experience the highest levels of physical vulnerability during roadway collisions. Findings may help identify locations requiring targeted safety improvements.
+**The Oregon Department of Transportation (ODOT)** is a potential user of the findings because it administers statewide transportation-safety programs and seeks to reduce crashes involving people walking and biking [@odotBikePed]. Statewide hotspot and infrastructure patterns may help guide screening, data collection, and prioritization, but they should not replace site-specific engineering analysis.
 
-Oregon Department of Transportation (ODOT): ODOT maintains statewide transportation safety initiatives and may use project findings to better understand risk factors associated with fatal pedestrian and cyclist crashes.
+**City and county transportation planners** may use the results to identify corridors where local roadway geometry, traffic control, lighting, crossing design, or land-use context should be examined. The analysis is intended to narrow the field of locations for investigation rather than prescribe a single intervention.
 
-City/County Transportation Planners: Local planners may benefit from spatial analyses identifying high-risk features such as traffic device (STOP sign, YIELD sign, signal), roadway surface, sidewalk presence, etc. for both retroactive and proactive infrastructure investment.
+**Public-health organizations and community advocates** may use the findings to support injury-prevention and transportation-equity discussions. Because tract-level demographic variables describe neighborhoods rather than crash victims, the equity analysis must be interpreted carefully and should not be used to stigmatize communities.
 
-Public Health and Community Organizations: Organizations focused on injury prevention, transportation equity, and community mobility may use findings to support advocacy and planning efforts.
-
+The peer stakeholder group's shared theme is data-driven prediction of community and urban outcomes. Their perspective has encouraged the team to connect technical analysis to realistic policy uses, limitations, and equity implications rather than treating model output as an end in itself.
 
 # Related Work and Background
 
-<!-- Brief cited context. Example: -->
+FARS is maintained by NHTSA as a nationwide census of fatal motor-vehicle traffic crashes. It provides annual crash-, vehicle-, and person-level files as well as specialized pedestrian and bicyclist information [@nhtsaFARS; @nhtsaFARSManual]. Because it includes only crashes meeting the fatality criterion, FARS is appropriate for studying the circumstances of fatal crashes but cannot independently estimate the probability that any roadway user, trip, or location will experience a crash.
 
-Wildfire smoke and respiratory health are well studied at regional scale [@reid2016; @liu2016]. This project applies county-level public data to Oregon specifically.
+Transportation-safety research frequently combines crash records with geographic analysis to identify high-density locations and recurring roadway conditions. DBSCAN is a density-based clustering algorithm designed to identify clusters of irregular shape while distinguishing isolated observations as noise [@ester1996]. These properties make it useful for exploratory hotspot detection because fatal crash locations do not necessarily form circular or administratively bounded groups.
+
+The ACS provides annually released social, economic, housing, and demographic estimates, including five-year estimates for Census tracts [@censusACS5]. This project uses tract-level ACS measures to add neighborhood context to fatal crash locations. The resulting variables should be interpreted as characteristics of the surrounding tract, not as attributes of individual victims.
+
+Oregon's pedestrian and bicycle planning framework emphasizes safety, equity, accessibility, connectivity, and strategic investment [@odot2016plan]. This project contributes to that broader planning context by combining statewide fatal-crash records, localized hotspot identification, infrastructure profiling, and tract-level demographic analysis in one reproducible workflow.
 
 # Data and Data Engineering
 
-<!-- Paste from M1 Sections 4 and 5; update with actual pipeline state after M2. -->
+## Data sources
 
-**Sources:**
+| Source | Role in the project | Coverage and access |
+|---|---|---|
+| NHTSA Fatality Analysis Reporting System (FARS) | Crash, person, pedestrian/bicyclist, vehicle, weather, temporal, roadway, and coordinate variables | Annual national CSV files, 2015–2024; U.S. government public data [@nhtsaFARS] |
+| U.S. Census Bureau TIGER/Line tract boundaries | Spatially assigns each valid crash coordinate to an Oregon Census tract | 2020 Oregon Census tract shapefile |
+| 2022 ACS 5-year estimates | Median income, population, racial/ethnic composition, and transit/walking commute measures | Census API; tract-level estimates [@censusACS2022] |
 
-| Source | Role | Access |
-|--------|------|--------|
-| | | |
+## Scope and unit of observation
 
-**Engineering summary:** Raw data in `data/raw/`; processed panel in `data/processed/`; ingest scripts in `src/ingest/`.
+The final analysis-ready dataset contains **1,049 fatal pedestrian and cyclist victim records**, representing **490 unique Oregon crashes** from 2015 through 2024. It contains **38 variables** and no duplicate rows. The unit of observation is an individual fatal non-motorist victim, not a unique crash. Multiple victims can therefore share the same `ST_CASE` crash identifier.
 
-```{r}
-#| label: tbl-data-qc
-#| tbl-cap: "Example QC summary (replace with your panel)"
+The victim-type distribution is:
+
+| Victim type | Records |
+|---|---:|
+| Pedestrian | 881 |
+| Bicyclist | 124 |
+| Personal conveyance / other pedalcyclist | 44 |
+| **Total** | **1,049** |
+
+## Relational structure and keys
+
+The source data are highly normalized. The engineering pipeline uses the following identifiers:
+
+- `ST_CASE`: unique crash identifier;
+- `VEH_NO`: vehicle identifier within a crash;
+- `PER_NO`: person identifier within a crash;
+- `STR_VEH`: striking-vehicle number recorded for the non-motorist;
+- `GEOID`: Census tract identifier added during spatial enrichment.
+
+The raw FARS tables are joined in the following sequence:
+
+1. `person.csv` and `pbtype.csv` are inner-joined using `STATE`, `STATENAME`, `ST_CASE`, `VEH_NO`, and `PER_NO` to create the victim-level base.
+2. `accident.csv` is left-joined by `STATE`, `STATENAME`, and `ST_CASE` to append crash-level location, environmental, temporal, and roadway context.
+3. Multiple weather records for the same crash are collapsed into a pipe-separated value and then left-joined by crash key.
+4. The victim's `STR_VEH` is matched to `vehicle.csv`'s `VEH_NO` within the same `ST_CASE` to retrieve speed-limit, traffic-control, and trafficway variables associated with the striking vehicle.
+
+## Reproducible pipeline
+
+The data pipeline has two stages.
+
+**Stage 1: FARS extraction and infrastructure integration**
+
+`initial.py` reads annual national FARS files from `data/raw/`, standardizes column names, filters Oregon records using `STATE = 41`, and writes annual Oregon-specific interim tables. It then performs the relational joins described above, concatenates all years, retains the analysis whitelist, and exports:
+
+`data/processed/FARSinfrastructure.csv`
+
+**Stage 2: Spatial and demographic enrichment**
+
+`enrich.py` filters invalid placeholder coordinates, converts valid crash records to a GeoDataFrame, downloads Oregon Census tract boundaries, and performs a point-in-polygon spatial join. It then queries the 2022 ACS 5-year API for income, population, race/ethnicity, transit, and walking-commute variables. After converting values to numeric form and replacing Census suppression codes with missing values, the script calculates tract-level percentages and joins the ACS data by `GEOID`. It exports:
+
+`data/processed/FARSmaster.csv`
+
+The complete flow is:
+
+> FARS annual CSVs → Oregon extraction and schema standardization → annual victim/crash/weather/vehicle joins → `FARSinfrastructure.csv` → coordinate validation → Census tract spatial join → ACS API enrichment → `FARSmaster.csv`
+
+## Data-quality findings
+
+The project identified several important data-quality constraints:
+
+| Variable | Not reported | Share of records |
+|---|---:|---:|
+| Traffic control device | 593 | 57% |
+| Speed limit | 248 | 24% |
+| Weather | 132 | 13% |
+
+Many source-data gaps are represented by standardized labels such as `None / Unknown` or `Not Reported` rather than true null values. These labels are retained because they reflect information unavailable in the original records rather than a processing failure. The final dataset includes 863 urban records, 185 rural records, and one record without a reported urban/rural classification. Victim ages range from 1 to 95, with a mean of 48.9 and a median of 50.
+
+The following Python example reproduces the principal quality-control counts when executed from the repository root.
+
+```{python}
+#| label: tbl-data-qc-code
+#| eval: false
 #| echo: true
 
-# Replace with your project data when ready:
-# panel <- readRDS(here::here("data/processed/analysis_panel.rds"))
-# nrow(panel)
-knitr::kable(data.frame(
-  check = c("Rows", "Counties", "Date range"),
-  status = c("stub", "stub", "stub")
-))
+from pathlib import Path
+import pandas as pd
+
+master_path = Path("data/processed/FARSmaster.csv")
+df = pd.read_csv(master_path)
+
+qc = pd.DataFrame({
+    "metric": ["Rows", "Columns", "Unique crashes", "Duplicate rows"],
+    "value": [len(df), df.shape[1], df["ST_CASE"].nunique(), df.duplicated().sum()],
+})
+qc
 ```
 
 # Ethics and Responsible Use
 
-<!-- Paste from M1 Section 8; expand with project-specific limits. -->
+## Privacy and consent
 
-- **Privacy:**
-- **Fairness / equity:**
-- **Limitations of setting:**
-- **Non-causal framing:** *(if observational)*
+The project uses public government records and does not contain direct personal identifiers, names, addresses, or protected health information. FARS represents victims through anonymous identifiers such as `ST_CASE` and `PER_NO`. Census measures are aggregated to the tract level and do not identify individual households.
+
+## Scope and undercoverage
+
+FARS includes only crashes involving at least one fatality. The dataset therefore cannot describe all pedestrian and cyclist crashes, near misses, or underlying travel exposure. Findings should be framed as patterns among recorded fatal crashes rather than total pedestrian or cyclist risk.
+
+## Ecological interpretation
+
+ACS variables describe the Census tract surrounding each crash location. They do not establish the income, race, ethnicity, or travel behavior of the victim. Interpreting tract-level associations as individual-level relationships would be an ecological fallacy.
+
+## Fairness and potential harms
+
+Historical infrastructure investment, enforcement, reporting practices, and travel patterns may differ across communities. A map that labels a neighborhood as a hotspot could stigmatize residents or encourage enforcement-heavy responses without addressing roadway design. Results should therefore be used to support equitable investigation, community engagement, and infrastructure review rather than to assign blame.
+
+## Non-causal framing
+
+The study is observational. DBSCAN identifies spatial concentration, feature summaries describe common conditions, and correlations measure linear association. None of these methods independently establish that a roadway or demographic feature caused a fatal crash. Exposure, traffic volume, land use, and other unmeasured factors may confound observed relationships.
 
 # Methods and Evaluation
 
-<!-- Paste from M1 Section 6; tighten once analysis is fixed. -->
+## Analytical design
 
-**Design:**
+The analysis uses three complementary approaches:
 
-**Primary analysis:**
+1. **Spatial clustering** to identify localized concentrations of fatal crashes;
+2. **Infrastructure profiling** to compare common roadway features inside clusters with statewide fatal-crash records;
+3. **Tract-level demographic analysis** to examine relationships between fatal crash rates and community characteristics.
 
-**Evaluation metrics:**
+Agreement across these approaches provides a stronger descriptive basis for further investigation than any one method alone. The analysis does not include a supervised predictive model in this draft. Because all observations come from fatal crashes, there is no valid negative class or denominator from which to model the probability of fatal-crash occurrence. A model trained only on fatal cases would not answer the stated research question and could imply predictive validity that the data do not support.
 
-**Train / validation / holdout:**
+## Spatial clustering with DBSCAN
 
-```{r}
-#| label: fig-methods-placeholder
-#| fig-cap: "Replace with a methods diagram or exploratory plot"
-#| echo: false
-#| fig-width: 5
-#| fig-height: 3
+DBSCAN was applied to valid fatal-crash coordinates using:
 
-plot(1, 1, type = "n", xlab = "", ylab = "", main = "Methods figure placeholder")
-text(1, 1, "Replace after M2/M3")
-```
+- neighborhood radius (`eps`): **200 meters**;
+- minimum observations (`min_samples`): **2 fatalities**.
+
+Coordinates were handled using a distance-appropriate spatial representation rather than treating raw latitude and longitude degrees as planar units. DBSCAN was selected because it can identify localized clusters of irregular shape and classify isolated observations as noise [@ester1996]. The parameters prioritize small, tightly localized concentrations that may correspond to a corridor, crossing area, or intersection environment.
+
+Each derived hotspot was reviewed against satellite imagery and available ODOT crash information to determine whether the cluster corresponded to a plausible roadway location. This step was used as a reasonableness check, not as an independent statistical validation.
+
+**TODO for final write-up:** report the total number of clusters, number and percentage of fatalities assigned to clusters, parameter-sensitivity checks, and a complete cluster inventory.
+
+## Infrastructure profiling
+
+For each hotspot, the most frequent category was calculated for selected FARS roadway and environmental variables. This creates a descriptive profile of the conditions most commonly represented within each cluster. The draft poster emphasizes three roadway features:
+
+- arterial functional system;
+- crashes away from an intersection;
+- two-way roads with a continuous left-turn lane.
+
+Cluster-level prevalence was compared with the prevalence of the same features across the statewide fatal-crash dataset. These comparisons describe overrepresentation within the identified hotspots; they do not estimate causal effects or account for roadway exposure.
+
+## Tract-level demographic analysis
+
+Fatal victim records were aggregated by Census tract. For each tract, the fatal crash rate was calculated as:
+
+\[
+\text{Fatal crash rate per 10,000 residents}
+=
+\frac{\text{fatal pedestrian and cyclist victim records in tract}}
+{\text{tract population}}
+\times 10{,}000.
+\]
+
+Pearson correlation coefficients were then calculated between the tract-level fatal crash rate and:
+
+- median household income;
+- percentage of the population identified as White;
+- percentage of the population identified as Black;
+- percentage of the population identified as Hispanic;
+- percentage of commuters using public transit or walking.
+
+The poster also includes grouped comparisons of average fatal crash rates by income and Black population share. The exact category definitions and inferential significance tests are still being finalized.
+
+**TODO for final write-up:** add p-values, confidence intervals, multiple-testing considerations, exact grouping thresholds, and the number of tracts included.
+
+## Evaluation strategy
+
+This draft evaluates results through:
+
+- spatial plausibility checks for all derived clusters;
+- comparison of cluster feature prevalence with statewide prevalence;
+- consistency across maps, descriptive summaries, and tract-level relationships;
+- explicit reporting of weak effect sizes and unresolved statistical significance;
+- transparent limitations concerning exposure, missing roadway fields, and causal interpretation.
+
+Because this is an exploratory observational study, evaluation emphasizes interpretability, reproducibility, and robustness rather than predictive accuracy.
 
 # Results and Visualizations
 
-<!-- Fill after M2 data summary and M3 poster figures. -->
+## Statewide spatial pattern and hotspot examples
 
-*(Stub: key findings with @fig-methods-placeholder and tables.)*
+The statewide map shows fatal pedestrian and cyclist victim records distributed across Oregon, with DBSCAN separating localized concentrations from isolated events. Two highlighted examples are located along Southeast 82nd Avenue and Southeast 181st Avenue in Portland. Both examples illustrate how the 200-meter clustering rule identifies tightly grouped fatalities around major urban roadway environments.
+
+::: {.callout-note}
+**Figure placeholder 1 — Statewide fatal-crash map and DBSCAN clusters.**  
+Insert the final exported statewide map. Caption will report the number of victim records, valid geocoded records, total clusters, clustered fatalities, and DBSCAN parameters.
+:::
+
+::: {.callout-note}
+**Figure placeholder 2 — Selected hotspot maps.**  
+Insert the Southeast 82nd Avenue and Southeast 181st Avenue hotspot maps. Caption will identify the cluster, location, number of fatalities, map scale, and the purpose of the 200-meter buffer shown in the draft poster.
+:::
+
+## Infrastructure profile of clustered locations
+
+The draft cluster-level feature analysis found:
+
+| Roadway feature | Occurrence within clusters | Statewide occurrence |
+|---|---:|---:|
+| Arterial road | 92.5% | 60.4% |
+| Not at an intersection | 57.5% | 70.6% |
+| Two-way road with a continuous left-turn lane | 50.0% | 23.7% |
+
+Arterial roads and two-way roads with continuous left-turn lanes were substantially more common in the clustered subset than in the statewide fatal-crash dataset. By contrast, non-intersection locations were common both statewide and within clusters, but their share was lower in the clustered subset. These comparisons suggest that the clustered locations have a distinct roadway profile, especially with respect to arterial classification and continuous center left-turn lanes. They do not establish that these features independently increase crash risk because roadway mileage, traffic volume, and pedestrian or cyclist exposure are not included.
+
+::: {.callout-note}
+**Figure placeholder 3 — Cluster and statewide feature prevalence.**  
+Insert the final feature-comparison chart or tables. Preserve the distinction between percentage of clustered records and percentage of all statewide fatal-crash records.
+:::
+
+## Demographic correlations
+
+The tract-level Pearson correlations reported in the draft poster were:
+
+| Tract characteristic | Correlation with fatal crash rate per 10,000 residents |
+|---|---:|
+| Median income | -0.136 |
+| Percent White | -0.078 |
+| Percent Black | 0.202 |
+| Percent Hispanic | 0.002 |
+| Percent transit/walking commuters | 0.185 |
+
+The observed relationships are weak in magnitude. Median income and percentage White have small negative associations with fatal crash rate, while percentage Black and transit/walking commute share have small positive associations. Percentage Hispanic is effectively uncorrelated with the rate in this draft analysis. The largest coefficient is the positive correlation with percentage Black (`r = 0.202`), but it remains modest and should not be interpreted as evidence of causation or disproportionate burden until significance tests and uncertainty estimates are completed.
+
+The grouped poster charts show higher average fatal crash rates in lower-income categories and variation across Black population-share categories. Because the exact cut points and inferential tests are still being finalized, the current write-up treats these charts as descriptive evidence only.
+
+::: {.callout-note}
+**Figure placeholder 4 — Correlation table and grouped demographic comparisons.**  
+Insert the final correlation visualization and average-rate charts. Captions will state the unit of analysis, tract count, group definitions, and treatment of zero-crash tracts.
+:::
 
 # Discussion, Limitations, and Future Work
 
-**Interpretation:**
+## Interpretation
 
-**Limitations:** *(tie to actual data and design)*
+The spatial analysis indicates that fatal pedestrian and cyclist crashes are not evenly distributed across Oregon. DBSCAN identifies localized concentrations, including clusters along major urban arterials in Portland. The infrastructure profile adds context: arterial classification and continuous center left-turn lanes appear more frequently within clustered fatal-crash records than in the statewide dataset. These features are plausible markers of complex, higher-speed, or multi-lane roadway environments, but the project does not yet isolate their effects from traffic volume, roadway mileage, or pedestrian and cyclist exposure.
 
-**Future work:**
+The demographic analysis provides limited preliminary evidence of neighborhood-level disparities. Correlations with income, Black population share, and transit/walking commute share point in directions that warrant further examination, but the coefficients are weak and statistical significance has not yet been established. The results are therefore better understood as screening signals than as conclusions about inequity.
+
+Taken together, the maps, hotspot profiles, and tract-level summaries help identify where additional local analysis may be most valuable. They should not be treated as a ranked list of communities at fault or as proof that a single roadway or demographic factor caused a fatality.
+
+## Limitations
+
+**Fatal-only outcome.** FARS excludes non-fatal crashes and locations with no reported crash. The analysis cannot estimate absolute crash probability or distinguish features of fatal crashes from features of otherwise similar non-fatal crashes.
+
+**Lack of exposure denominators.** The dataset does not contain pedestrian counts, cyclist counts, roadway mileage, or vehicle miles traveled. A location may have more fatalities partly because more people travel through it.
+
+**Missing roadway information.** Traffic-control and speed-limit variables contain substantial not-reported values. This reduces confidence in feature prevalence estimates and may introduce systematic reporting bias.
+
+**Victim-versus-crash unit.** The analytical dataset contains one row per fatal victim. Crashes involving multiple victims contribute multiple records and may receive greater weight in summaries unless aggregation is handled explicitly.
+
+**Spatial precision.** Coordinate errors, placeholder coordinates, and tract-boundary assignment can affect cluster membership and demographic linkage. A 200-meter radius is analytically useful but does not necessarily correspond to one roadway engineering site.
+
+**ACS timing and uncertainty.** The project applies 2022 ACS five-year tract estimates to crashes spanning 2015–2024. Neighborhood conditions may have changed during the study period, and ACS estimates contain sampling uncertainty not yet incorporated into the correlation analysis.
+
+**Ecological fallacy and confounding.** Tract demographics cannot be attributed to individual victims. Income, race/ethnicity, commute patterns, urban density, roadway design, and exposure may be interrelated.
+
+**Exploratory parameter choice.** DBSCAN results depend on the selected radius and minimum-sample threshold. The draft has not yet documented sensitivity to alternative parameter values.
+
+## Future work
+
+Before the final submission, the project will:
+
+- complete significance tests and uncertainty estimates for tract-level associations;
+- document the number, size, and location of all DBSCAN clusters;
+- clarify demographic grouping thresholds and include tract sample sizes;
+- consolidate analysis code and final figure-generation scripts;
+- add complete figure captions, axis labels, units, and reproducibility instructions;
+
+Longer-term extensions should integrate non-fatal crash records, pedestrian and cyclist exposure, traffic volume, posted and operating speeds, crossing infrastructure, lane counts, and historical roadway changes. Those additions would support stronger comparative and potentially predictive analyses.
 
 # Conclusions and Recommendations
 
-*(Short, stakeholder-facing takeaways.)*
+Fatal pedestrian and cyclist crashes in Oregon show meaningful spatial concentration rather than a uniform statewide pattern. In the draft results, identified hotspots are especially associated with arterial roads and two-way roadways containing continuous left-turn lanes. Tract-level demographic relationships are weak but indicate areas for further equity-focused investigation, particularly around income, Black population share, and transit or walking commute share.
+
+For ODOT and local transportation agencies, the immediate value of this work is **screening and prioritization**. Identified hotspots should be reviewed using local crash histories, traffic and active-transportation counts, operating-speed data, crossing conditions, lighting, and community input. Locations should not be prioritized solely because of a statistical cluster or neighborhood demographic profile.
+
+Three preliminary recommendations follow from the current evidence:
+
+1. **Conduct corridor-level safety reviews of clustered arterial locations.** Reviews should examine speed environment, crossing distance, lighting, lane configuration, transit access, and pedestrian or cyclist desire lines.
+2. **Collect exposure and infrastructure data before selecting interventions.** Pedestrian, cyclist, and vehicle volumes are necessary to distinguish high use from unusually high risk.
+3. **Apply an equity-centered review process.** Demographic findings should prompt community engagement and additional investigation, not enforcement-heavy responses or assumptions about individual victims.
+
+The central takeaway is that statewide fatal-crash data can identify locations and recurring roadway conditions that deserve closer attention, but responsible action requires combining these signals with local engineering evidence, exposure measures, and community knowledge.
 
 # Reproducibility and References
 
-**Reproduce main results:**
+## Reproduce the processed data
+
+From the repository root:
 
 ```bash
-cd your-repo
+python initial.py
+python enrich.py
+```
+
+These commands require the downloaded annual FARS folders in `data/raw/`, the Python dependencies used by the project, and an active Census API key supplied securely rather than committed to version control.
+
+## Reproduce the write-up
+
+```bash
 quarto render deliverables/M4-writeup-draft/writeup.qmd
 ```
 
-**Dependencies:** `requirements.txt` or `renv.lock` in repo root.
+## Environment and dependencies
 
-**Data:** URLs and approval status documented in `docs/data-dictionary.md`.
+Current core dependencies include:
+
+- Python 3.x;
+- pandas;
+- GeoPandas;
+- Shapely;
+- NumPy;
+- scikit-learn;
+- matplotlib;
+- seaborn;
+- requests;
+- Quarto with a Python/Jupyter execution environment.
+
+**TODO for final write-up:** consolidate the spatial, statistical, and figure-generation code; document exact script or notebook paths; provide a pinned `requirements.txt` or equivalent environment file; and verify the full workflow from a clean clone.
 
 # References
 
 ::: {#refs}
 :::
-
-<!-- Create refs.bib alongside this file. Example entries: -->
-
-<!--
-@article{liu2016,
-  title={Wildfire-specific fine particulate matter and risk of hospital admissions in urban and rural counties},
-  author={Liu, J. C. and others},
-  journal={Epidemiology},
-  year={2016}
-}
-
-@article{reid2016,
-  title={Critical review of health impacts of wildfire smoke exposure},
-  author={Reid, C. E. and others},
-  journal={Environmental Health Perspectives},
-  year={2016}
-}
--->
