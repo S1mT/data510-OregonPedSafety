@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_804df214663788ea956987534c24a765 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_804df214663788ea956987534c24a765" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_804df214663788ea956987534c24a765 = L.map(
+                "map_804df214663788ea956987534c24a765",
+                {
+                    center: [45.189229090909095, -122.7875109090909],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_24b8de77a4e31eb0fe711aa7b1f91ebf = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_24b8de77a4e31eb0fe711aa7b1f91ebf.addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            var circle_98580cbb3b68d715d50e7a4ceeb7de2a = L.circle(
+                [45.46876, -122.57906],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 163.1, "stroke": true, "weight": 2}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_98580cbb3b68d715d50e7a4ceeb7de2a.bindTooltip(
+                `<div>
+                     <b>Hotspot #3</b><br>Unique Incidents: 4<br>Total Fatalities: 4<br>Years Active: 2016, 2017, 2018, 2024<br>Radius: 163.1m<br><i>Dominant Road: Principal Arterial - Other</i>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_ebf2c67826de24c3225d939afc6c2db4 = L.circle(
+                [45.52156, -122.47707],
+                {"bubblingMouseEvents": true, "color": "#00FF00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00FF00", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 123.6, "stroke": true, "weight": 2}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_ebf2c67826de24c3225d939afc6c2db4.bindTooltip(
+                `<div>
+                     <b>Hotspot #1</b><br>Unique Incidents: 3<br>Total Fatalities: 3<br>Years Active: 2015, 2019, 2023<br>Radius: 123.6m<br><i>Dominant Road: Principal Arterial - Other</i>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_351d76b6bf1060e64d6d1e1ffb66779b = L.circle(
+                [44.99698, -123.02651],
+                {"bubblingMouseEvents": true, "color": "#0000FF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000FF", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 44.3, "stroke": true, "weight": 2}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_351d76b6bf1060e64d6d1e1ffb66779b.bindTooltip(
+                `<div>
+                     <b>Hotspot #2</b><br>Unique Incidents: 3<br>Total Fatalities: 3<br>Years Active: 2016, 2019, 2020<br>Radius: 44.3m<br><i>Dominant Road: Minor Arterial</i>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_a0c9fa0afe6f5cc10e9fc69203808def = L.circle(
+                [45.42665, -122.63395],
+                {"bubblingMouseEvents": true, "color": "#FFFF00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFFF00", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 145.8, "stroke": true, "weight": 2}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_a0c9fa0afe6f5cc10e9fc69203808def.bindTooltip(
+                `<div>
+                     <b>Hotspot #4</b><br>Unique Incidents: 3<br>Total Fatalities: 3<br>Years Active: 2015, 2016<br>Radius: 145.8m<br><i>Dominant Road: Principal Arterial - Other</i>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_58a3406e698f8adbb070b8e471b9999b = L.circle(
+                [45.5006, -122.53764],
+                {"bubblingMouseEvents": true, "color": "#FF00FF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF00FF", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 97.5, "stroke": true, "weight": 2}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_58a3406e698f8adbb070b8e471b9999b.bindTooltip(
+                `<div>
+                     <b>Hotspot #7</b><br>Unique Incidents: 3<br>Total Fatalities: 3<br>Years Active: 2017, 2020, 2021<br>Radius: 97.5m<br><i>Dominant Road: Minor Arterial</i>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_79e313e6fca958073f595d7c45ea75e5 = L.circle(
+                [45.51915, -122.51342],
+                {"bubblingMouseEvents": true, "color": "#00FFFF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00FFFF", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 36.4, "stroke": true, "weight": 2}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_79e313e6fca958073f595d7c45ea75e5.bindTooltip(
+                `<div>
+                     <b>Hotspot #8</b><br>Unique Incidents: 3<br>Total Fatalities: 3<br>Years Active: 2017, 2018, 2022<br>Radius: 36.4m<br><i>Dominant Road: Minor Arterial</i>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_b09a01ca49a4964a184734c2ea7822aa = L.circle(
+                [45.58469, -122.68272],
+                {"bubblingMouseEvents": true, "color": "#FF8000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF8000", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 31.8, "stroke": true, "weight": 2}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_b09a01ca49a4964a184734c2ea7822aa.bindTooltip(
+                `<div>
+                     <b>Hotspot #9</b><br>Unique Incidents: 3<br>Total Fatalities: 3<br>Years Active: 2017, 2022, 2024<br>Radius: 31.8m<br><i>Dominant Road: Principal Arterial - Other</i>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_8da982cdbd1a54e7c27391224978e9fd = L.circle(
+                [44.55372, -123.26498],
+                {"bubblingMouseEvents": true, "color": "#FF007F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF007F", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 47.4, "stroke": true, "weight": 2}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_8da982cdbd1a54e7c27391224978e9fd.bindTooltip(
+                `<div>
+                     <b>Hotspot #10</b><br>Unique Incidents: 3<br>Total Fatalities: 3<br>Years Active: 2018, 2019, 2020<br>Radius: 47.4m<br><i>Dominant Road: Principal Arterial - Other</i>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_fe554335c6a54f593ebf0e3823319407 = L.circle(
+                [45.51682, -122.97398],
+                {"bubblingMouseEvents": true, "color": "#80FF00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#80FF00", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 91.1, "stroke": true, "weight": 2}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_fe554335c6a54f593ebf0e3823319407.bindTooltip(
+                `<div>
+                     <b>Hotspot #11</b><br>Unique Incidents: 3<br>Total Fatalities: 3<br>Years Active: 2019, 2022<br>Radius: 91.1m<br><i>Dominant Road: Principal Arterial - Other</i>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_d639129e617f60bb1a1c19a3fda9e0b2 = L.circle(
+                [44.9469, -123.03877],
+                {"bubblingMouseEvents": true, "color": "#00FF80", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00FF80", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 140.2, "stroke": true, "weight": 2}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_d639129e617f60bb1a1c19a3fda9e0b2.bindTooltip(
+                `<div>
+                     <b>Hotspot #12</b><br>Unique Incidents: 2<br>Total Fatalities: 7<br>Years Active: 2021, 2022<br>Radius: 140.2m<br><i>Dominant Road: Principal Arterial - Other</i>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_9d777c65df8baab3afc68ba8312886d0 = L.circle(
+                [44.04569, -122.93452],
+                {"bubblingMouseEvents": true, "color": "#007FFF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#007FFF", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 81.6, "stroke": true, "weight": 2}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_9d777c65df8baab3afc68ba8312886d0.bindTooltip(
+                `<div>
+                     <b>Hotspot #0</b><br>Unique Incidents: 2<br>Total Fatalities: 5<br>Years Active: 2015, 2020<br>Radius: 81.6m<br><i>Dominant Road: Principal Arterial - Other</i>
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b69099b051c927207ec68c421e7f7fc4 = L.circleMarker(
+                [44.0457, -122.9347111],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#007FFF", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_b69099b051c927207ec68c421e7f7fc4.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410041</b><br>Year: 2015<br>Speed Limit: 40 MPH<br>Light: Daylight<br>Pedestrian Position: Crosswalk Area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_43f4c5208618d099827a003322c7443d = L.circleMarker(
+                [44.0457, -122.9347111],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#007FFF", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_43f4c5208618d099827a003322c7443d.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410041</b><br>Year: 2015<br>Speed Limit: 40 MPH<br>Light: Daylight<br>Pedestrian Position: Crosswalk Area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e2568a422aa0905b0736af1a6551666f = L.circleMarker(
+                [44.0457, -122.9347111],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#007FFF", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_e2568a422aa0905b0736af1a6551666f.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410041</b><br>Year: 2015<br>Speed Limit: 40 MPH<br>Light: Daylight<br>Pedestrian Position: Crosswalk Area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0c64b58cd83ba7049bbe069940c6e666 = L.circleMarker(
+                [44.0457, -122.9347111],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#007FFF", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_0c64b58cd83ba7049bbe069940c6e666.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410041</b><br>Year: 2015<br>Speed Limit: 40 MPH<br>Light: Daylight<br>Pedestrian Position: Crosswalk Area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_546ca928ce5e193c785b53dd84bd9f23 = L.circleMarker(
+                [45.42752778, -122.634225],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFFF00", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_546ca928ce5e193c785b53dd84bd9f23.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410067</b><br>Year: 2015<br>Speed Limit: 40 MPH<br>Light: Dark - Lighted<br>Pedestrian Position: Travel Lane
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a343529028d32cb709cd26d7e919fda9 = L.circleMarker(
+                [45.52192778, -122.4771444],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00FF00", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_a343529028d32cb709cd26d7e919fda9.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410276</b><br>Year: 2015<br>Speed Limit: 35 MPH<br>Light: Daylight<br>Pedestrian Position: Crosswalk Area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ab92956d41dd2f791387a12c50dd5ff2 = L.circleMarker(
+                [45.42551667, -122.6338917],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFFF00", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_ab92956d41dd2f791387a12c50dd5ff2.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410322</b><br>Year: 2015<br>Speed Limit: 40 MPH<br>Light: Dark - Not Lighted<br>Pedestrian Position: Travel Lane
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5f09e6c005f31b0d4af77f3206391f7e = L.circleMarker(
+                [44.99689722, -123.0266472],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000FF", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_5f09e6c005f31b0d4af77f3206391f7e.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410188</b><br>Year: 2016<br>Speed Limit: 35 MPH<br>Light: Dark - Lighted<br>Pedestrian Position: Crosswalk Area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1da46958fe50186b1162255ae103e14e = L.circleMarker(
+                [45.46866944, -122.5790639],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_1da46958fe50186b1162255ae103e14e.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410227</b><br>Year: 2016<br>Speed Limit: Not Reported<br>Light: Daylight<br>Pedestrian Position: Not a Pedestrian
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e22093e1c9a1c5368e14297f94af4f0f = L.circleMarker(
+                [45.42689722, -122.6337444],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFFF00", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_e22093e1c9a1c5368e14297f94af4f0f.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410387</b><br>Year: 2016<br>Speed Limit: 40 MPH<br>Light: Dark - Not Lighted<br>Pedestrian Position: Travel Lane
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7a78b7208b0e45e3452eb4355c2b890a = L.circleMarker(
+                [45.46811667, -122.5790694],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_7a78b7208b0e45e3452eb4355c2b890a.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410086</b><br>Year: 2017<br>Speed Limit: Not Reported<br>Light: Dark - Lighted<br>Pedestrian Position: Travel Lane
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2536f37213bf24e8a2773b8497c9454a = L.circleMarker(
+                [45.5013, -122.5376583],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF00FF", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_2536f37213bf24e8a2773b8497c9454a.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410168</b><br>Year: 2017<br>Speed Limit: 35 MPH<br>Light: Dark - Not Lighted<br>Pedestrian Position: Travel Lane
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_68a3e0d9a499108730fb562de4f90982 = L.circleMarker(
+                [45.51912778, -122.5136278],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00FFFF", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_68a3e0d9a499108730fb562de4f90982.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410293</b><br>Year: 2017<br>Speed Limit: Not Reported<br>Light: Dark - Lighted<br>Pedestrian Position: Travel Lane
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d1bc766986b6712efb6e2d02816aff0c = L.circleMarker(
+                [45.58466389, -122.6826167],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF8000", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_d1bc766986b6712efb6e2d02816aff0c.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410343</b><br>Year: 2017<br>Speed Limit: Not Reported<br>Light: Dark - Lighted<br>Pedestrian Position: Crosswalk Area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_de8d1ad979b04e37a9f815178ab2549c = L.circleMarker(
+                [44.55384722, -123.2649556],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF007F", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_de8d1ad979b04e37a9f815178ab2549c.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410144</b><br>Year: 2018<br>Speed Limit: 25 MPH<br>Light: Daylight<br>Pedestrian Position: Not a Pedestrian
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ab836de78cf773ec92365c6d35092741 = L.circleMarker(
+                [45.47004722, -122.5790472],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_ab836de78cf773ec92365c6d35092741.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410405</b><br>Year: 2018<br>Speed Limit: 35 MPH<br>Light: Daylight<br>Pedestrian Position: Not a Pedestrian
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9b53d0b1a8bc5c1beab1e6ceb7de53d2 = L.circleMarker(
+                [45.51919444, -122.5132417],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00FFFF", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_9b53d0b1a8bc5c1beab1e6ceb7de53d2.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410409</b><br>Year: 2018<br>Speed Limit: 30 MPH<br>Light: Dark - Lighted<br>Pedestrian Position: Crosswalk Area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1539698ac5c8f4048e834f0e28477321 = L.circleMarker(
+                [44.99689167, -123.0262278],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000FF", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_1539698ac5c8f4048e834f0e28477321.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410119</b><br>Year: 2019<br>Speed Limit: 30 MPH<br>Light: Daylight<br>Pedestrian Position: Sidewalk / Shared-Use Path / Driveway Access
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_820e20d6e488bde6d5bc6b33b68f0c91 = L.circleMarker(
+                [45.51745556, -122.9739417],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#80FF00", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_820e20d6e488bde6d5bc6b33b68f0c91.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410313</b><br>Year: 2019<br>Speed Limit: Not Reported<br>Light: Dark - Lighted<br>Pedestrian Position: Crosswalk Area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_285ae267b25501e780c7f6f5585c259a = L.circleMarker(
+                [44.55347778, -123.2649778],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF007F", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_285ae267b25501e780c7f6f5585c259a.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410371</b><br>Year: 2019<br>Speed Limit: Not Reported<br>Light: Daylight<br>Pedestrian Position: Not a Pedestrian
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8fa0c9276501f70dad1665658c2678c8 = L.circleMarker(
+                [45.51626667, -122.9739583],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#80FF00", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_8fa0c9276501f70dad1665658c2678c8.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410406</b><br>Year: 2019<br>Speed Limit: Not Reported<br>Light: Dark - Lighted<br>Pedestrian Position: Not a Pedestrian
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0b3e958f7d44573241369fedd62de9fd = L.circleMarker(
+                [45.520625, -122.477125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00FF00", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_0b3e958f7d44573241369fedd62de9fd.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410473</b><br>Year: 2019<br>Speed Limit: Not Reported<br>Light: Dark - Unknown Lighting<br>Pedestrian Position: Travel Lane
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_734bf5bcf8b53b12e3be2ba590c9c9f1 = L.circleMarker(
+                [44.55384722, -123.26501944],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF007F", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_734bf5bcf8b53b12e3be2ba590c9c9f1.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410243</b><br>Year: 2020<br>Speed Limit: 25 MPH<br>Light: Dark - Unknown Lighting<br>Pedestrian Position: Crosswalk Area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d2c7904606e343dca398e5cda081e668 = L.circleMarker(
+                [44.04565556, -122.93375],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#007FFF", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_d2c7904606e343dca398e5cda081e668.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410250</b><br>Year: 2020<br>Speed Limit: 35 MPH<br>Light: Dark - Lighted<br>Pedestrian Position: Travel Lane
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ca3af37e450b402f1cc9849babd04b71 = L.circleMarker(
+                [44.99714722, -123.02665833],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000FF", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_ca3af37e450b402f1cc9849babd04b71.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410253</b><br>Year: 2020<br>Speed Limit: 35 MPH<br>Light: Dark - Lighted<br>Pedestrian Position: Travel Lane
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_82816e1c81df7a1b29bda993e3a3d37b = L.circleMarker(
+                [45.50037778, -122.53765278],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF00FF", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_82816e1c81df7a1b29bda993e3a3d37b.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410389</b><br>Year: 2020<br>Speed Limit: 30 MPH<br>Light: Dark - Lighted<br>Pedestrian Position: Travel Lane
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8b22e6edabe93e8ed2d2f2210ff8c1a7 = L.circleMarker(
+                [44.94685556, -123.03723889],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00FF80", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_8b22e6edabe93e8ed2d2f2210ff8c1a7.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410191</b><br>Year: 2021<br>Speed Limit: 30 MPH<br>Light: Dark - Lighted<br>Pedestrian Position: Crosswalk Area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4bee6c95ec980c2b340285252d938518 = L.circleMarker(
+                [45.50013056, -122.53759722],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF00FF", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_4bee6c95ec980c2b340285252d938518.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410523</b><br>Year: 2021<br>Speed Limit: Not Reported<br>Light: Dark - Lighted<br>Pedestrian Position: Travel Lane
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f4145461ae739bb429e1ae2c595d1460 = L.circleMarker(
+                [44.94690556, -123.03901944],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00FF80", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_f4145461ae739bb429e1ae2c595d1460.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410115</b><br>Year: 2022<br>Speed Limit: 35 MPH<br>Light: Dark - Lighted<br>Pedestrian Position: Non-Trafficway - Parking Lot/Other
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2aefb9deaa340d29f80e8582e9cd4225 = L.circleMarker(
+                [44.94690556, -123.03901944],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00FF80", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_2aefb9deaa340d29f80e8582e9cd4225.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410115</b><br>Year: 2022<br>Speed Limit: 35 MPH<br>Light: Dark - Lighted<br>Pedestrian Position: Non-Trafficway - Parking Lot/Other
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_90e357b42b00dec42ae1c961f556a9bf = L.circleMarker(
+                [44.94690556, -123.03901944],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00FF80", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_90e357b42b00dec42ae1c961f556a9bf.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410115</b><br>Year: 2022<br>Speed Limit: 35 MPH<br>Light: Dark - Lighted<br>Pedestrian Position: Non-Trafficway - Parking Lot/Other
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_68f4723a11f72ce97f656c339152d14f = L.circleMarker(
+                [44.94690556, -123.03901944],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00FF80", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_68f4723a11f72ce97f656c339152d14f.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410115</b><br>Year: 2022<br>Speed Limit: 35 MPH<br>Light: Dark - Lighted<br>Pedestrian Position: Non-Trafficway - Parking Lot/Other
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b52553ed379e5505a8f15d0d54d39975 = L.circleMarker(
+                [44.94690556, -123.03901944],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00FF80", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_b52553ed379e5505a8f15d0d54d39975.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410115</b><br>Year: 2022<br>Speed Limit: 35 MPH<br>Light: Dark - Lighted<br>Pedestrian Position: Non-Trafficway - Parking Lot/Other
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1a938ea4cfa6668b2502d67626cb754d = L.circleMarker(
+                [44.94690556, -123.03901944],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00FF80", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_1a938ea4cfa6668b2502d67626cb754d.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410115</b><br>Year: 2022<br>Speed Limit: 35 MPH<br>Light: Dark - Lighted<br>Pedestrian Position: Non-Trafficway - Parking Lot/Other
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f14aa30dabdf76dda2986efd1fdcb1ea = L.circleMarker(
+                [45.51672778, -122.97403611],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#80FF00", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_f14aa30dabdf76dda2986efd1fdcb1ea.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410470</b><br>Year: 2022<br>Speed Limit: 35 MPH<br>Light: Dark - Lighted<br>Pedestrian Position: Travel Lane
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c7dcbd250d542a0cc218a29630b32fc6 = L.circleMarker(
+                [45.51911944, -122.51338611],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00FFFF", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_c7dcbd250d542a0cc218a29630b32fc6.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410509</b><br>Year: 2022<br>Speed Limit: 30 MPH<br>Light: Dark - Not Lighted<br>Pedestrian Position: Crosswalk Area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_116349bfd488af1e4f066442c692921e = L.circleMarker(
+                [45.5847, -122.68286667],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF8000", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_116349bfd488af1e4f066442c692921e.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410534</b><br>Year: 2022<br>Speed Limit: Not Reported<br>Light: Dark - Not Lighted<br>Pedestrian Position: Crosswalk Area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7c04cdfd674ae8e1075ef8845f9f77ad = L.circleMarker(
+                [45.52211389, -122.47692778],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00FF00", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_7c04cdfd674ae8e1075ef8845f9f77ad.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410524</b><br>Year: 2023<br>Speed Limit: 35 MPH<br>Light: Dark - Lighted<br>Pedestrian Position: Crosswalk Area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d44241795b0914f3f21a216ec95c0adb = L.circleMarker(
+                [45.46820833, -122.57905833],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_d44241795b0914f3f21a216ec95c0adb.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410032</b><br>Year: 2024<br>Speed Limit: 30 MPH<br>Light: Dark - Lighted<br>Pedestrian Position: Travel Lane
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_953c76e5823593b747e0fc2859cf3c5c = L.circleMarker(
+                [45.58469722, -122.68266389],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF8000", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_804df214663788ea956987534c24a765);
+        
+    
+            circle_marker_953c76e5823593b747e0fc2859cf3c5c.bindTooltip(
+                `<div>
+                     <b>Incident: ST_CASE 410269</b><br>Year: 2024<br>Speed Limit: 40 MPH<br>Light: Dark - Lighted<br>Pedestrian Position: Other/Unknown
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

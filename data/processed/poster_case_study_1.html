@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9a2cf2ba289a99c3e5f06cb3d0b49290 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+     <div style="position: fixed; 
+                 top: 20px; left: 50px; width: 380px; z-index:9999; 
+                 background-color: white; padding: 15px; border-radius: 8px; 
+                 border: 1px solid #cbd5e1;
+                 box-shadow: 2px 2px 12px rgba(0,0,0,0.15);
+                 font-family: 'Helvetica Neue', Arial, sans-serif;">
+         <h3 style="margin-top:0px; margin-bottom:8px; color: #0f172a; font-size: 18px;">
+            Case Study: 118, Southeast 181st Avenue
+         </h3>
+         <p style="margin: 0px; font-size: 14px; color: #334155; line-height: 1.5;">
+         <b>Incidents:</b> 3 | <b>Fatalities:</b> 3<br>
+         <b>Timeline:</b> 2015, 2019, 2023<br>
+         <b>Road Type:</b> Principal Arterial - Other<br>
+         <b>Lighting:</b> Dark - Lighted<br>
+         <b>Danger Zone Radius:</b> 123.6m
+         </p>
+     </div>
+     
+    
+            <div class="folium-map" id="map_9a2cf2ba289a99c3e5f06cb3d0b49290" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9a2cf2ba289a99c3e5f06cb3d0b49290 = L.map(
+                "map_9a2cf2ba289a99c3e5f06cb3d0b49290",
+                {
+                    center: [45.52156, -122.47707],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 17,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_9a2cf2ba289a99c3e5f06cb3d0b49290);
+
+            
+
+        
+    
+            var tile_layer_d75a9517e2024fa33f5b86d1810e0867 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d75a9517e2024fa33f5b86d1810e0867.addTo(map_9a2cf2ba289a99c3e5f06cb3d0b49290);
+        
+    
+            var circle_2f7ae6900a26b7f151b9da82e5f798c5 = L.circle(
+                [45.52156, -122.47707],
+                {"bubblingMouseEvents": true, "color": "#e11d48", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f43f5e", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 123.6, "stroke": true, "weight": 3}
+            ).addTo(map_9a2cf2ba289a99c3e5f06cb3d0b49290);
+        
+    
+            var circle_marker_c872eb1d88b1ae6a4cf6217c074e8f6a = L.circleMarker(
+                [45.52192778, -122.4771444],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9f1239", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_9a2cf2ba289a99c3e5f06cb3d0b49290);
+        
+    
+            var circle_marker_91849eeb1dae379d30c655f303357c49 = L.circleMarker(
+                [45.520625, -122.477125],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9f1239", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_9a2cf2ba289a99c3e5f06cb3d0b49290);
+        
+    
+            var circle_marker_b1cb7fc6f01fbcdcf98924373cc694e2 = L.circleMarker(
+                [45.52211389, -122.47692778],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9f1239", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_9a2cf2ba289a99c3e5f06cb3d0b49290);
+        
+</script>
+</html>

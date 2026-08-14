@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_301a5571af91d95ca112d6713095c724 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+     <div style="position: fixed; 
+                 top: 20px; left: 50px; width: 380px; z-index:9999; 
+                 background-color: white; padding: 15px; border-radius: 8px; 
+                 border: 1px solid #cbd5e1;
+                 box-shadow: 2px 2px 12px rgba(0,0,0,0.15);
+                 font-family: 'Helvetica Neue', Arial, sans-serif;">
+         <h3 style="margin-top:0px; margin-bottom:8px; color: #0f172a; font-size: 18px;">
+            Case Study: Bi-Lo Mini Mart, 7476
+         </h3>
+         <p style="margin: 0px; font-size: 14px; color: #334155; line-height: 1.5;">
+         <b>Incidents:</b> 4 | <b>Fatalities:</b> 4<br>
+         <b>Timeline:</b> 2016, 2017, 2018, 2024<br>
+         <b>Road Type:</b> Principal Arterial - Other<br>
+         <b>Lighting:</b> Dark - Lighted<br>
+         <b>Danger Zone Radius:</b> 163.1m
+         </p>
+     </div>
+     
+    
+            <div class="folium-map" id="map_301a5571af91d95ca112d6713095c724" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_301a5571af91d95ca112d6713095c724 = L.map(
+                "map_301a5571af91d95ca112d6713095c724",
+                {
+                    center: [45.46876, -122.57906],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 17,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_301a5571af91d95ca112d6713095c724);
+
+            
+
+        
+    
+            var tile_layer_df16b2d890edc31a767e6b4f0007247a = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_df16b2d890edc31a767e6b4f0007247a.addTo(map_301a5571af91d95ca112d6713095c724);
+        
+    
+            var circle_15bad5fd73cced905bfa253c8ffa12f1 = L.circle(
+                [45.46876, -122.57906],
+                {"bubblingMouseEvents": true, "color": "#e11d48", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f43f5e", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 163.1, "stroke": true, "weight": 3}
+            ).addTo(map_301a5571af91d95ca112d6713095c724);
+        
+    
+            var circle_marker_77405ad34c05def88de065e368c2a75b = L.circleMarker(
+                [45.46866944, -122.5790639],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9f1239", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_301a5571af91d95ca112d6713095c724);
+        
+    
+            var circle_marker_cd055b5e3f4bfdaf47980ae55ea64f40 = L.circleMarker(
+                [45.46811667, -122.5790694],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9f1239", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_301a5571af91d95ca112d6713095c724);
+        
+    
+            var circle_marker_0d8b643e372d80b0790a9697e3fa186d = L.circleMarker(
+                [45.47004722, -122.5790472],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9f1239", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_301a5571af91d95ca112d6713095c724);
+        
+    
+            var circle_marker_707bb3e5d2d6aef9f3ca6086276a6816 = L.circleMarker(
+                [45.46820833, -122.57905833],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9f1239", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_301a5571af91d95ca112d6713095c724);
+        
+</script>
+</html>
