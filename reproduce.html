@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reproduce — Oregon Pedestrian Safety Capstone</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="index.html">OR<span>·</span>PedSafety</a>
+    <div class="tabs">
+      <a href="index.html">Home</a>
+      <a href="artifacts.html">Artifacts</a>
+      <a href="results.html">Results</a>
+      <a class="active" href="reproduce.html">Reproduce</a>
+      <a href="ethics.html">Ethics &amp; Data</a>
+      <a href="team.html">Team</a>
+    </div>
+  </div>
+</nav>
+
+<div class="lane"></div>
+
+<header class="page-header">
+  <div class="wrap">
+    <div class="section-label mono">03 / Run It Yourself</div>
+    <h1>Reproducibility</h1>
+    <p class="lede">Clone the repo, install dependencies, and rebuild the pipeline, clustering, and write-up
+    from scratch.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="steps">
+      <div class="step">
+        <div class="step-num mono">01</div>
+        <div>
+          <h3>Clone the repository</h3>
+          <p>Pulls in the processed datasets, scripts, notebooks, and both deliverables folders.</p>
+          <pre>git clone https://github.com/S1mT/data510-OregonPedSafety.git
+cd data510-OregonPedSafety</pre>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num mono">02</div>
+        <div>
+          <h3>Install dependencies</h3>
+          <p>Python 3.10+ recommended. All package versions are pinned in <code>requirements.txt</code>
+          (pandas, numpy, scikit-learn, scipy, matplotlib, seaborn, geopandas, shapely, requests, folium).</p>
+          <pre>python -m venv venv
+source venv/bin/activate   # Windows: venv\Scripts\activate
+pip install -r requirements.txt</pre>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num mono">03</div>
+        <div>
+          <h3>Use the processed data, or rebuild it from raw</h3>
+          <p><code>data/processed/FARSinfrastructure.csv</code> and <code>FARSmaster.csv</code> are already
+          included, so most of the analysis can run without re-pulling raw data. To rebuild from scratch:
+          download the 2015–2024 national FARS CSV tables into <code>data/raw/</code>, then run the two-stage
+          pipeline.</p>
+          <pre>python data/scripts/initial.py   # builds FARSinfrastructure.csv
+# set CENSUS_API_KEY in enrich.py before this step
+python data/scripts/enrich.py    # builds FARSmaster.csv</pre>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num mono">04</div>
+        <div>
+          <h3>Reproduce the clustering and figures</h3>
+          <p>DBSCAN hotspot detection, hotspot profiling, and the interactive maps all read from
+          <code>data/processed/</code>.</p>
+          <pre>python data/scripts/DBSCAN.py
+python data/scripts/hotspot_profiler.py
+python data/scripts/interactive_map_generator.py</pre>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num mono">05</div>
+        <div>
+          <h3>Rebuild the write-up</h3>
+          <p>The final report is a Quarto document. Rendering regenerates the HTML and PDF with all figures
+          and citations from <code>refs.bib</code>.</p>
+          <pre>quarto render deliverables/M5-final-poster-and-writeup/final-writeup.qmd</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="lane"></div>
+
+<footer>
+  <div class="wrap">
+    DATA 510 Data Science Capstone · Willamette University Atkinson Graduate School of Management · Summer 2026 ·
+    <a href="https://github.com/S1mT/data510-OregonPedSafety">Source on GitHub</a>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ethics &amp; Data — Oregon Pedestrian Safety Capstone</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="index.html">OR<span>·</span>PedSafety</a>
+    <div class="tabs">
+      <a href="index.html">Home</a>
+      <a href="artifacts.html">Artifacts</a>
+      <a href="results.html">Results</a>
+      <a href="reproduce.html">Reproduce</a>
+      <a class="active" href="ethics.html">Ethics &amp; Data</a>
+      <a href="team.html">Team</a>
+    </div>
+  </div>
+</nav>
+
+<div class="lane"></div>
+
+<header class="page-header">
+  <div class="wrap">
+    <div class="section-label mono">04 / Data Notice</div>
+    <h1>Ethics &amp; Data</h1>
+    <p class="lede">Licensing, privacy handling, known bias, and how the demographic findings should — and
+    shouldn't — be used.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="ethics-grid">
+      <div class="ethics-card">
+        <span class="badge">License</span>
+        <h3>Public-domain sources</h3>
+        <p>Both underlying datasets — NHTSA's Fatality Analysis Reporting System (FARS) and the U.S. Census
+        Bureau's American Community Survey (ACS) 5-Year Estimates — are U.S. government open data in the
+        public domain. No data-sharing agreement was required to use them.</p>
+      </div>
+      <div class="ethics-card">
+        <span class="badge">Privacy</span>
+        <h3>No PII, suppression respected</h3>
+        <p>FARS victim records are anonymized and indexed only by randomized case/person numbers. The
+        enrichment pipeline actively blanks Census privacy-suppression codes (e.g. <code>-666666666</code>)
+        so low-population tracts aren't de-anonymized.</p>
+      </div>
+      <div class="ethics-card">
+        <span class="badge">Bias</span>
+        <h3>Underreporting bias</h3>
+        <p>Police-reported crash data undercounts minor pedestrian and cyclist incidents, skewing the sample
+        toward severe outcomes. Findings are scoped to reported fatal crashes and are not a general measure
+        of total risk.</p>
+      </div>
+      <div class="ethics-card">
+        <span class="badge">Equity</span>
+        <h3>Careful use of demographic findings</h3>
+        <p>Tract-level demographic associations describe neighborhoods, not individual victims. A hotspot
+        model that under-represents lower-baseline-traffic corridors could misdirect safety investment, so
+        these results are meant to prioritize investigation — not to stigmatize communities or replace
+        site-specific engineering review.</p>
+      </div>
+      <div class="ethics-card">
+        <span class="badge">Scope</span>
+        <h3>Descriptive, not causal</h3>
+        <p>No supervised predictive model was built: the dataset contains only fatal crashes, so there is no
+        defensible non-fatal comparison group. All results are descriptive statistical associations and
+        spatial clusters, not causal claims.</p>
+      </div>
+      <div class="ethics-card">
+        <span class="badge">Attribution</span>
+        <h3>Sources</h3>
+        <p>NHTSA FARS Analytical User's Manual and FARS FTP data portal; U.S. Census Bureau ACS 5-Year
+        Estimates API (2022 vintage). Full citations are in
+        <a href="deliverables/M5-final-poster-and-writeup/final-writeup.html">the write-up</a>'s reference list.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="lane"></div>
+
+<footer>
+  <div class="wrap">
+    DATA 510 Data Science Capstone · Willamette University Atkinson Graduate School of Management · Summer 2026 ·
+    <a href="https://github.com/S1mT/data510-OregonPedSafety">Source on GitHub</a>
+  </div>
+</footer>
+
+</body>
+</html>

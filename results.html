@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Results — Oregon Pedestrian Safety Capstone</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="index.html">OR<span>·</span>PedSafety</a>
+    <div class="tabs">
+      <a href="index.html">Home</a>
+      <a href="artifacts.html">Artifacts</a>
+      <a class="active" href="results.html">Results</a>
+      <a href="reproduce.html">Reproduce</a>
+      <a href="ethics.html">Ethics &amp; Data</a>
+      <a href="team.html">Team</a>
+    </div>
+  </div>
+</nav>
+
+<div class="lane"></div>
+
+<header class="page-header">
+  <div class="wrap">
+    <div class="section-label mono">02 / Findings</div>
+    <h1>Results Highlights</h1>
+    <p class="lede">Key figures from the analysis: where crashes cluster, what the pipeline looks like, and how
+    hotspots compare to the statewide baseline.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="results-grid">
+      <div class="fig wide">
+        <img src="deliverables/M5-final-poster-and-writeup/figures/statewide_systemic_hotspots.png" alt="Map of DBSCAN-identified systemic crash hotspots across Oregon">
+        <div class="cap">
+          <span class="num mono">FIG. 01</span>
+          <p>DBSCAN clustering on 2015–2024 fatal-crash coordinates surfaced 15 candidate spatial clusters;
+          filtering to locations with at least two distinct crash incidents left 11 systemic hotspots
+          (highlighted markers), concentrated along the I-5 corridor from Portland through Eugene.</p>
+        </div>
+      </div>
+      <div class="fig">
+        <img src="deliverables/M5-final-poster-and-writeup/figures/infrastructure_comparison.png" alt="Bar chart comparing roadway conditions at hotspots vs statewide">
+        <div class="cap">
+          <span class="num mono">FIG. 02</span>
+          <p>Systemic hotspots skew toward arterial roads and away from intersections and continuous
+          left-turn lanes, relative to the statewide fatal-crash mix.</p>
+        </div>
+      </div>
+      <div class="fig">
+        <img src="deliverables/M5-final-poster-and-writeup/figures/pipeline.png" alt="Data pipeline diagram from raw FARS tables to final analysis dataset">
+        <div class="cap">
+          <span class="num mono">FIG. 03</span>
+          <p>Two-stage pipeline: raw FARS tables are cleaned and merged into an infrastructure dataset, then
+          spatially joined to Census tracts and enriched with ACS demographics.</p>
+        </div>
+      </div>
+      <div class="fig">
+        <img src="deliverables/M5-final-poster-and-writeup/figures/income_chart.png" alt="Chart of median income by crash tract vs statewide baseline">
+        <div class="cap">
+          <span class="num mono">FIG. 04</span>
+          <p>Census tracts represented in the fatal-crash data show a weak but statistically significant
+          skew toward lower median household income.</p>
+        </div>
+      </div>
+      <div class="fig">
+        <img src="deliverables/M5-final-poster-and-writeup/figures/black_pop_chart.png" alt="Chart of Black population share by crash tract vs statewide baseline">
+        <div class="cap">
+          <span class="num mono">FIG. 05</span>
+          <p>Crash tracts also show a weak but significant skew toward higher Black population share, one
+          input into the project's equity discussion.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="lane"></div>
+
+<footer>
+  <div class="wrap">
+    DATA 510 Data Science Capstone · Willamette University Atkinson Graduate School of Management · Summer 2026 ·
+    <a href="https://github.com/S1mT/data510-OregonPedSafety">Source on GitHub</a>
+  </div>
+</footer>
+
+</body>
+</html>
