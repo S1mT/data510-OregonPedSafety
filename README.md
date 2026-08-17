@@ -6,6 +6,7 @@ A data science project using NHTSA FARS data to identify environmental, roadway,
 
 | Field | Value |
 |-------|-------|
+| Portfolio Site | https://s1mt.github.io/data510-OregonPedSafety/index.html |
 | Owner team | Simon Thompson, Rohan Srinivasa Babu |
 | Owner Product Lead | Simon Thompson |
 | Peer Stakeholder POs | Amaya Supancich-McCord, Aiyana Brown, Seira Ramchandani |
